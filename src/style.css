@@ -2831,7 +2831,7 @@ color: #fff;
 
 /* line 56, src/wallet/assets/sass/index.scss */
 .container-tabs .item-wrapper__tab.active span {
-  color: #2c3e50;
+  color: #FFF;
 }
 
 /* line 59, src/wallet/assets/sass/index.scss */
@@ -3088,7 +3088,13 @@ color: #fff;
 /* line 259, src/wallet/assets/sass/index.scss */
 .balances__table {
   display: table;
+  margin-top: 25px;
   width: 100%;
+}
+.balances__row.balances__row_head{
+  margin-bottom: 17px;
+  transform: translateY(-13px) !important;
+  border-radius: 20px !important;
 }
 
 /* line 264, src/wallet/assets/sass/index.scss */
@@ -3096,22 +3102,38 @@ color: #fff;
   display: table-row;
   border-radius: 12px;
   cursor: pointer;
-  transition: all .2s;
+
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background: #d8d8d8;
+  /*background: #d8d8d8;*/
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all .9s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: all;
 }
+
+.balances__logo img{
+  transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+  transform: scale(0);
+}
+
+.balances__row.fade .balances__logo img{
+  transform: scale(1);
+}
+.balances__row.fade{
+  opacity: 1;
+  transform: translateY(0px);
+} 
 
 /* line 272, src/wallet/assets/sass/index.scss */
 .balances__row:nth-child(2n+1) {
-  background: rgba(228, 228, 228, 0.9);
+  /*background: rgba(228, 228, 228, 0.9);*/
 }
 
 /* line 276, src/wallet/assets/sass/index.scss */
-.balances__row:not(.balances__row_head):hover {
-  background: none;
-  box-shadow: 0 0 0 2px #1dd1a1;
-}
 
+.balances__row .{
+
+}
 /* line 281, src/wallet/assets/sass/index.scss */
 .balances__cell {
   display: table-cell;
@@ -3134,11 +3156,8 @@ color: #fff;
 
 /* line 297, src/wallet/assets/sass/index.scss */
 .balances__cell:first-child {
-  border-radius: 12px 0 0 12px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: row-reverse;
+
+ 
 }
 
 /* line 305, src/wallet/assets/sass/index.scss */
@@ -3164,7 +3183,7 @@ color: #fff;
 /* line 322, src/wallet/assets/sass/index.scss */
 .balances__cell:last-child {
   padding-right: 24px;
-  border-radius: 0 12px 12px 0;
+ 
 }
 
 @media only screen and (max-width: 767px) {
@@ -3210,12 +3229,12 @@ color: #fff;
 
 /* line 365, src/wallet/assets/sass/index.scss */
 .balances__row_head .balances__cell:first-child {
-  border-radius: 8px 0 0 8px;
+border-radius: 20px;
 }
 
 /* line 369, src/wallet/assets/sass/index.scss */
 .balances__row_head .balances__cell:last-child {
-  border-radius: 0 8px 8px 0;
+ 
 }
 
 /* line 373, src/wallet/assets/sass/index.scss */
@@ -3273,7 +3292,7 @@ color: #fff;
 
 /* line 418, src/wallet/assets/sass/index.scss */
 body.dark .balances__row:nth-child(2n+1) {
-  background: rgba(228, 228, 228, 0.04);
+  /*background: rgba(228, 228, 228, 0.04);*/
 }
 
 /* line 423, src/wallet/assets/sass/index.scss */
@@ -3533,3 +3552,100 @@ p{
 }
 
 
+
+
+.balances__row_head{
+  background-color: transparent !important;
+}
+
+
+.balances__row_head .balances__cell{
+  background: #fff;
+}
+
+.balances__row_head .balances__cell:first-child{
+  border-radius: 15px 0 0 15px !important;
+}
+
+.balances__row_head .balances__cell:last-child{
+  border-radius: 0 15px 15px 0 !important;
+}
+
+.balances__row .balances__cell{
+  background: white;
+}
+.balances__row:nth-child(2n+1) .balances__cell{
+  background: #f3f3f3;
+}
+
+
+
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.balances__row:nth-child(2) .balances__cell:first-child{
+  border-radius: 12px 0 0 0;
+}
+.balances__row:nth-child(2) .balances__cell:last-child{
+  border-radius: 0 12px 0 0;
+}
+
+.balances__row:last-child .balances__cell:first-child{
+  border-radius: 0 0 0 12px;
+}
+
+.balances__row:last-child .balances__cell:last-child{
+  border-radius: 0 0 12px  0;
+}
+
+
+.item__filter{
+  transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: translateY(-100px);
+  opacity: 0;
+}
+
+.item__filter.open{
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.item__filter span{
+  color: #dedede;
+}
+
+.item__filter{
+  padding: 11px 25px;
+  /* box-shadow: 0 5px 20px 0 rgb(0 0 0 / 8%); */
+  margin-right: 20px;
+  min-width: 110px;
+  border: 1.5px solid;
+  color: #fff;
+  border-color: #1dd1a1;
+  text-align: center;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: 0.7s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.item-c{
+  transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: translateY(-100px);
+  opacity: 0;
+}
+
+.item-c.open{
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+
+.pagination-table .prev-table{
+  border-color: #1dd1a1;
+}
+.pagination-table .next-table{
+  border-color: #1dd1a1;
+}
