@@ -3,12 +3,13 @@ import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import * as dat from 'dat.gui'
 import { Sphere } from 'three'
-
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 //Loading
 
 const textureLoader = new THREE.TextureLoader()
 
-const normalTexture = textureLoader.load('/texture/NormalMap.png')
+//const normalTexture = textureLoader.load('/texture/NormalMap.png')
+const normalTexture = textureLoader.load('https://free3dicon.com/wp-content/uploads/2021/06/binance_usd_perspective_matte_s-1-300x300.png.webp')
 const sprite = new THREE.TextureLoader().load( '/texture/Daco_4267714.png' );
 
 
@@ -120,6 +121,8 @@ light2.addColor(light2Color, 'color')
 /*const pointLightHelper2 = new THREE.PointLightHelper(pointLight3, 2)
 scene.add(pointLightHelper2) */
 
+
+
 /**
  * Sizes
  */
@@ -162,7 +165,8 @@ scene.add(camera)
  */
 const renderer = new THREE.WebGLRenderer({
     canvas: canvas,
-    alpha: true
+    alpha: true,
+    antialias: true
 })
 renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))

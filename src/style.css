@@ -2935,16 +2935,19 @@ color: #fff;
 
 /* line 139, src/wallet/assets/sass/index.scss */
 .item__filter {
-  padding: 11px 25px;
+  padding: 5px 25px;
+  margin-right: 20px;
+  line-height: 34px;
   box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.08);
   margin-right: 20px;
   min-width: 110px;
   border: 1px solid;
-  border-color: transparent;
+  border-color: #1dd1a1;
   text-align: center;
   border-radius: 35px;
   cursor: pointer;
   transition: 0.7s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-transform: uppercase;
 }
 
 /* line 150, src/wallet/assets/sass/index.scss */
@@ -2955,13 +2958,12 @@ color: #fff;
 
 /* line 154, src/wallet/assets/sass/index.scss */
 .item__filter:hover {
-  border-color: #1dd1a1;
+  background: #1dd1a1;
+  color:#FFFF;
 }
 
 /* line 156, src/wallet/assets/sass/index.scss */
-.item__filter:hover span {
-  color: #1dd1a1;
-}
+
 
 /* line 162, src/wallet/assets/sass/index.scss */
 .pagination-table {
@@ -3503,7 +3505,7 @@ body{
     top: 0;
     left: 0;
     outline: none;
-    mix-blend-mode: lighten;
+    mix-blend-mode: color-dodge;
 }
 .containerwebgl{
    
@@ -3618,19 +3620,7 @@ p{
   color: #dedede;
 }
 
-.item__filter{
-  padding: 11px 25px;
-  /* box-shadow: 0 5px 20px 0 rgb(0 0 0 / 8%); */
-  margin-right: 20px;
-  min-width: 110px;
-  border: 1.5px solid;
-  color: #fff;
-  border-color: #1dd1a1;
-  text-align: center;
-  border-radius: 35px;
-  cursor: pointer;
-  transition: 0.7s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
+
 .item-c{
   transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
   transform: translateY(-100px);
