@@ -71,7 +71,7 @@ const materialParticles = new THREE.PointsMaterial({
 // Mesh
 const sphere = new THREE.Points (geometry,material)
 const particlesMesh = new THREE.Points(particlesGeometry, materialParticles)
-scene.add(sphere, particlesMesh)
+scene.add( particlesMesh)
 
 // Lights
 

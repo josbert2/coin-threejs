@@ -3514,6 +3514,7 @@ body{
     left: 0;
     outline: none;
     mix-blend-mode: color-dodge;
+    mix-blend-mode: color-dodge;
 }
 .containerwebgl{
    
