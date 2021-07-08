@@ -301,11 +301,12 @@ display: block;
 position: fixed !important;
 }
 .danger-svg svg{
-    fill:#55efc4 !important;
+   
+    fill:#ff7675 !important;
 }
 
 .success-svg svg{
-    fill:#ff7675 !important;
+    fill:#55efc4 !important;
 }
 
 
@@ -331,6 +332,51 @@ position: fixed !important;
 
         </section>
     </div>-->
+    <header class="main-header">
+        <div class="container height100">
+            <div class="d-flex align-items-center height100">
+                <div class="d-flex align-items-center">
+                    <div class="logo d-flex align-items-center" style="margin-right: 40px;">
+                        LOGO
+                    </div>
+                    <div class="">
+                        <ul class="ul-items">
+                            <li class="d-flex aling-items-center">
+                                <svg fill="#FFF" xmlns="http://www.w3.org/2000/svg" style="margin-right:15px" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><rect fill="none" height="24" width="24"/><path d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg>
+                                <input class="ios-switch --dark" type="checkbox" checked="">
+                            </li>
+                            <li>
+                                <a href="" class="active">Live Prices</a>
+                            </li>
+                            <li>
+                                <a href="">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="">Alerts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ml-auto d-flex">
+                    <div class="search-input" style="margin-right: 10px;">
+                        <input type="text" placeholder="Buscar">
+                    </div>
+                    <a href="" class="login">
+                        <button>
+                            LOGIN
+                        </button>
+                    </a>
+
+                    <a href="" class="register">
+                        <button>
+                            REGISTER
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </header>
  
     <div data-scroll-container style="position: fixed;z-index: 1;margin: 0 auto;width: 100%;">
         <div data-scroll>
@@ -341,8 +387,41 @@ position: fixed !important;
             <section class="gallery" data-scroll-section id="pin" style="        padding-top: 70px;">
                 <div class="containerwebgl">
                     <div class="contentwebgl">
-                        <h1 style="text-align:center"> CRYPTO CLUB</h1>
-                        <p>The Grin blockchain has presented significant technical challenges.</p>
+                        <!--<h1 style="text-align:center"> CRYPTO CLUB</h1>
+                        <p>The Grin blockchain has presented significant technical challenges.</p>-->
+                        <div class="content-stat d-flex flex-column text-align-left">
+                            <span>MARKET CAP</span>
+                           <div class="d-flex">
+                                $1,464,925,068,994   <div class="d-flex danger-svg" style="color:#ff7675;fill:#ff7675">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                                        <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                        <path d="M8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"></path>
+                                        </svg>3.6%
+                                    </div>
+                           </div>
+                        </div>
+                        <div class="content-stat d-flex flex-column text-align-left">
+                            <span>VOLUME 24H</span>
+                           <div class="d-flex">
+                                $1,464,925,068,994   <div class="d-flex danger-svg" style="color:#ff7675;fill:#ff7675">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                                        <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                        <path d="M8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"></path>
+                                        </svg>3.6%
+                                    </div>
+                           </div>
+                        </div>
+                        <div class="content-stat d-flex flex-column text-align-left">
+                           <span>BTC DOMINANCE</span>
+                           <div class="d-flex">
+                                $1,464,925,068,994  <div class="d-flex danger-svg" style="color:#ff7675;fill:#ff7675">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                                        <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                        <path d="M8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"></path>
+                                        </svg>3.6%
+                                    </div>
+                           </div>
+                        </div>
                     </div>
                 </div>
         
@@ -378,18 +457,27 @@ position: fixed !important;
                         <div class="item__filter">
                             <span>Filtro</span>
                         </div>
-                        <div class="pagination-table">
-                            <div class="prev-table item-c">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-                                    <path d="M0 0h24v24H0V0z" fill="none"></path>
-                                    <path d="M14.71 6.71c-.39-.39-1.02-.39-1.41 0L8.71 11.3c-.39.39-.39 1.02 0 1.41l4.59 4.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L10.83 12l3.88-3.88c.39-.39.38-1.03 0-1.41z"></path>
-                                </svg>
+                        <div class="d-flex align-items-center ml-auto">
+                            <div class="select-length">
+                                Resultado por paginas
+                                <select>
+                                    <option value="">20</option>
+                                    <option value="">40</option>
+                                </select>
                             </div>
-                            <div class="next-table item-c">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-                                    <path d="M0 0h24v24H0V0z" fill="none"></path>
-                                    <path d="M9.29 6.71c-.39.39-.39 1.02 0 1.41L13.17 12l-3.88 3.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z"></path>
-                                </svg>
+                            <div class="pagination-table">
+                                <div class="prev-table item-c">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                                        <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                        <path d="M14.71 6.71c-.39-.39-1.02-.39-1.41 0L8.71 11.3c-.39.39-.39 1.02 0 1.41l4.59 4.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L10.83 12l3.88-3.88c.39-.39.38-1.03 0-1.41z"></path>
+                                    </svg>
+                                </div>
+                                <div class="next-table item-c">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                                        <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                        <path d="M9.29 6.71c-.39.39-.39 1.02 0 1.41L13.17 12l-3.88 3.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z"></path>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
 
@@ -429,7 +517,11 @@ position: fixed !important;
     </div>
 </div>
 <div class="balances__cell">BTC</div>
-<div class="balances__cell"><div class="d-flex danger-svg" style="color:#ff7675;fill:#ff7675"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"></path></svg>3.6%</div></div>
+<div class="balances__cell"><div class="d-flex danger-svg" style="color:#ff7675;fill:#ff7675">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+        <path d="M0 0h24v24H0V0z" fill="none"></path>
+        <path d="M8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"></path></svg>3.6%</div
+        ></div>
 <div class="balances__cell">
     <div class="balances__number">19,266.6454898</div>
     <div class="balances__price">$2,134.325</div>
