@@ -10,7 +10,7 @@ const textureLoader = new THREE.TextureLoader()
 
 //const normalTexture = textureLoader.load('/texture/NormalMap.png')
 const normalTexture = textureLoader.load('https://free3dicon.com/wp-content/uploads/2021/06/binance_usd_perspective_matte_s-1-300x300.png.webp')
-const sprite = new THREE.TextureLoader().load( '/texture/Daco_4267714.png' );
+const sprite = new THREE.TextureLoader().load( 'https://ucarecdn.com/cfd68d1a-aee6-4882-8474-1ca017bb26c6/Daco_4267714.png' );
 
 
 // Debug

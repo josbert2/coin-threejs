@@ -1,0 +1,4357 @@
+/*
+@import "_includes/Components/app/_all";
+@import "_includes/Components/mixing/_all";
+@include font-portafolio();
+@include font-gordi();
+@import '_includes/Components/utilities/_function';
+@import "_includes/Components/base/_all";
+@import "_includes/Components/components/_all";
+@import "_includes/Components/grid/_all";
+@import "_includes/Components/utilities/_all";
+@import "_includes/Components/lib/_all";
+
+@import "_includes/Components/color/_all";
+
+@import "_includes/Components/layout/_all";
+ 
+@import "_includes/Components/design/_all";*/
+/* line 3, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* line 8, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+html {
+  font-family: 'Poppins', sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  line-height: 1.5;
+  moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased;
+  height: 100%;
+}
+
+/* line 22, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: scotch-color("text", "for-text");
+  height: 100%;
+  background-color: scotch-color("text", "light-after");
+}
+
+/* line 32, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/* line 38, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+section,
+menu,
+nav,
+section,
+summary,
+div {
+  display: block;
+}
+
+/* line 55, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+udio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* line 63, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 68, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* line 73, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 78, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* line 83, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 87, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+/* line 97, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+button {
+  overflow: visible;
+}
+
+/* line 102, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 107, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 115, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/* line 120, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 126, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+input {
+  line-height: normal;
+}
+
+/* line 130, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 136, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 141, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+/* line 146, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 151, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 157, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 162, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 166, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 175, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+  margin: 0 !important;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+/* line 189, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 198, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 208, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 218, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 229, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 238, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 246, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 250, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+/* line 261, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 273, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 289, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 299, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 308, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 319, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 331, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+/* line 342, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 353, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 366, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+/* line 374, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+/* line 383, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 393, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 403, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+/* line 412, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 421, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+/* line 433, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 441, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+/* line 452, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+/* line 460, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 463, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 467, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+li {
+  list-style: none;
+}
+
+/* line 34, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.z-depth-0 {
+  box-shadow: none !important;
+}
+
+/* line 38, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.z-depth-1 {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* line 42, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.z-depth-1-half {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* line 46, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.z-depth-2 {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 50, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.z-depth-3 {
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 54, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.z-depth-4 {
+  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+}
+
+/* line 58, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.z-depth-5 {
+  box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
+}
+
+/* line 61, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.z-depth-6 {
+  box-shadow: 0 10px 35px -18px rgba(0, 0, 0, 0.22);
+}
+
+/* line 64, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.z-depth-6-bottom {
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.22);
+}
+
+/* line 67, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.z-depth-7-bottom {
+  box-shadow: 0 10px 35px -18px rgba(0, 0, 0, 0.22);
+}
+
+/* line 70, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.z-depth-8 {
+  box-shadow: 4px 2px 20px rgba(0, 0, 0, 0.22);
+}
+
+/* line 75, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.md-elevation-0 {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.14), 0 0 0 0 rgba(0, 0, 0, 0.12);
+}
+
+/* line 79, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.md-elevation-1 {
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* line 83, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.md-elevation-2 {
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* line 87, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.md-elevation-3 {
+  box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* line 91, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.md-elevation-4 {
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* line 95, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.md-elevation-5 {
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 5px 8px 0 rgba(0, 0, 0, 0.14), 0 1px 14px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* line 99, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.md-elevation-6 {
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* line 103, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.md-elevation-7 {
+  box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.2), 0 7px 10px 1px rgba(0, 0, 0, 0.14), 0 2px 16px 1px rgba(0, 0, 0, 0.12);
+}
+
+/* line 107, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.md-elevation-8 {
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* line 111, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.md-elevation-9 {
+  box-shadow: 0 5px 6px -3px rgba(0, 0, 0, 0.2), 0 9px 12px 1px rgba(0, 0, 0, 0.14), 0 3px 16px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* line 115, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.md-elevation-10 {
+  box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.2), 0 10px 14px 1px rgba(0, 0, 0, 0.14), 0 4px 18px 3px rgba(0, 0, 0, 0.12);
+}
+
+/* line 119, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.md-elevation-11 {
+  box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2), 0 11px 15px 1px rgba(0, 0, 0, 0.14), 0 4px 20px 3px rgba(0, 0, 0, 0.12);
+}
+
+/* line 123, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.md-elevation-12 {
+  box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12);
+}
+
+/* line 127, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.md-elevation-13 {
+  box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 13px 19px 2px rgba(0, 0, 0, 0.14), 0 5px 24px 4px rgba(0, 0, 0, 0.12);
+}
+
+/* line 131, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.md-elevation-14 {
+  box-shadow: 0 7px 9px -4px rgba(0, 0, 0, 0.2), 0 14px 21px 2px rgba(0, 0, 0, 0.14), 0 5px 26px 4px rgba(0, 0, 0, 0.12);
+}
+
+/* line 135, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.md-elevation-15 {
+  box-shadow: 0 8px 9px -5px rgba(0, 0, 0, 0.2), 0 15px 22px 2px rgba(0, 0, 0, 0.14), 0 6px 28px 5px rgba(0, 0, 0, 0.12);
+}
+
+/* line 139, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.md-elevation-16 {
+  box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2), 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12);
+}
+
+/* line 143, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.md-elevation-17 {
+  box-shadow: 0 8px 11px -5px rgba(0, 0, 0, 0.2), 0 17px 26px 2px rgba(0, 0, 0, 0.14), 0 6px 32px 5px rgba(0, 0, 0, 0.12);
+}
+
+/* line 147, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.md-elevation-18 {
+  box-shadow: 0 9px 11px -5px rgba(0, 0, 0, 0.2), 0 18px 28px 2px rgba(0, 0, 0, 0.14), 0 7px 34px 6px rgba(0, 0, 0, 0.12);
+}
+
+/* line 151, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.md-elevation-19 {
+  box-shadow: 0 9px 12px -6px rgba(0, 0, 0, 0.2), 0 19px 29px 2px rgba(0, 0, 0, 0.14), 0 7px 36px 6px rgba(0, 0, 0, 0.12);
+}
+
+/* line 155, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.md-elevation-20 {
+  box-shadow: 0 10px 13px -6px rgba(0, 0, 0, 0.2), 0 20px 31px 3px rgba(0, 0, 0, 0.14), 0 8px 38px 7px rgba(0, 0, 0, 0.12);
+}
+
+/* line 159, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.md-elevation-21 {
+  box-shadow: 0 10px 13px -6px rgba(0, 0, 0, 0.2), 0 21px 33px 3px rgba(0, 0, 0, 0.14), 0 8px 40px 7px rgba(0, 0, 0, 0.12);
+}
+
+/* line 163, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.md-elevation-22 {
+  box-shadow: 0 10px 14px -6px rgba(0, 0, 0, 0.2), 0 22px 35px 3px rgba(0, 0, 0, 0.14), 0 8px 42px 7px rgba(0, 0, 0, 0.12);
+}
+
+/* line 167, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.md-elevation-23 {
+  box-shadow: 0 11px 14px -7px rgba(0, 0, 0, 0.2), 0 23px 36px 3px rgba(0, 0, 0, 0.14), 0 9px 44px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* line 171, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.md-elevation-24 {
+  box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2), 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* line 175, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.bx1 {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+
+/* line 178, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.bx1_1 {
+  box-shadow: 0 2px 4px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* line 181, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.bx1_2 {
+  box-shadow: 0 2px 7px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* line 184, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.bx1_3 {
+  box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* line 187, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.bx1_4 {
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* line 190, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.bx1_5 {
+  box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.04);
+}
+
+/* line 193, src/wallet/assets/sass/_includes/Components/mixing/_boxshadow.scss */
+.bx1_6 {
+  box-shadow: 4px 4px 15px 0 rgba(0, 0, 0, 0.04);
+}
+
+/* line 10, src/wallet/assets/sass/_includes/Components/mixing/_img-responsive.scss */
+.responsive-image__inner {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+}
+
+/* line 7, src/wallet/assets/sass/_includes/Components/mixing/_img.scss */
+#my-oreo-cake {
+  max-height: 249px;
+}
+
+/* line 42, src/wallet/assets/sass/_includes/Components/mixing/_img-responsive.scss */
+#my-oreo-cake > .responsive-image__inner {
+  background-image: url("https://tokegameart.net/wp-content/uploads/2016/10/Super-Cat-2D-Character-Sprite.jpg");
+  padding-bottom: 62.25%;
+  max-width: 400px;
+}
+
+@media (min-width: 35rem) {
+  /* line 7, src/wallet/assets/sass/_includes/Components/mixing/_img.scss */
+  #my-oreo-cake {
+    max-height: 467px;
+  }
+  /* line 42, src/wallet/assets/sass/_includes/Components/mixing/_img-responsive.scss */
+  #my-oreo-cake > .responsive-image__inner {
+    background-image: url("https://tokegameart.net/wp-content/uploads/2016/10/Super-Cat-2D-Character-Sprite.jpg");
+    padding-bottom: 62.26667%;
+    max-width: 750px;
+  }
+}
+
+@media (min-width: 46.8rem) {
+  /* line 7, src/wallet/assets/sass/_includes/Components/mixing/_img.scss */
+  #my-oreo-cake {
+    max-height: 638px;
+  }
+  /* line 42, src/wallet/assets/sass/_includes/Components/mixing/_img-responsive.scss */
+  #my-oreo-cake > .responsive-image__inner {
+    background-image: url("https://tokegameart.net/wp-content/uploads/2016/10/Super-Cat-2D-Character-Sprite.jpg");
+    padding-bottom: 62.30469%;
+    max-width: 1024px;
+  }
+}
+
+/* line 6, src/wallet/assets/sass/_includes/Components/grid/_grid.scss */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  /* line 6, src/wallet/assets/sass/_includes/Components/grid/_grid.scss */
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 6, src/wallet/assets/sass/_includes/Components/grid/_grid.scss */
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 6, src/wallet/assets/sass/_includes/Components/grid/_grid.scss */
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 6, src/wallet/assets/sass/_includes/Components/grid/_grid.scss */
+  .container {
+    max-width: 1240px;
+  }
+}
+
+/* line 18, src/wallet/assets/sass/_includes/Components/grid/_grid.scss */
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 28, src/wallet/assets/sass/_includes/Components/grid/_grid.scss */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/* line 34, src/wallet/assets/sass/_includes/Components/grid/_grid.scss */
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* line 38, src/wallet/assets/sass/_includes/Components/grid/_grid.scss */
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* line 8, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+.col-xl-auto {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* line 32, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+/* line 37, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: none;
+}
+
+/* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.col-1 {
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%;
+}
+
+/* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.col-2 {
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%;
+}
+
+/* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+/* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.col-4 {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+}
+
+/* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.col-5 {
+  flex: 0 0 41.66667%;
+  max-width: 41.66667%;
+}
+
+/* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+/* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.col-7 {
+  flex: 0 0 58.33333%;
+  max-width: 58.33333%;
+}
+
+/* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.col-8 {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+}
+
+/* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+/* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.col-10 {
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%;
+}
+
+/* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.col-11 {
+  flex: 0 0 91.66667%;
+  max-width: 91.66667%;
+}
+
+/* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* line 49, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.order-first {
+  order: -1;
+}
+
+/* line 51, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.order-last {
+  order: 13;
+}
+
+/* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.order-0 {
+  order: 0;
+}
+
+/* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.order-1 {
+  order: 1;
+}
+
+/* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.order-2 {
+  order: 2;
+}
+
+/* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.order-3 {
+  order: 3;
+}
+
+/* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.order-4 {
+  order: 4;
+}
+
+/* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.order-5 {
+  order: 5;
+}
+
+/* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.order-6 {
+  order: 6;
+}
+
+/* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.order-7 {
+  order: 7;
+}
+
+/* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.order-8 {
+  order: 8;
+}
+
+/* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.order-9 {
+  order: 9;
+}
+
+/* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.order-10 {
+  order: 10;
+}
+
+/* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.order-11 {
+  order: 11;
+}
+
+/* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.order-12 {
+  order: 12;
+}
+
+/* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.offset-1 {
+  margin-left: 8.33333%;
+}
+
+/* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.offset-2 {
+  margin-left: 16.66667%;
+}
+
+/* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.offset-3 {
+  margin-left: 25%;
+}
+
+/* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.offset-4 {
+  margin-left: 33.33333%;
+}
+
+/* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.offset-5 {
+  margin-left: 41.66667%;
+}
+
+/* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.offset-6 {
+  margin-left: 50%;
+}
+
+/* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.offset-7 {
+  margin-left: 58.33333%;
+}
+
+/* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.offset-8 {
+  margin-left: 66.66667%;
+}
+
+/* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.offset-9 {
+  margin-left: 75%;
+}
+
+/* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.offset-10 {
+  margin-left: 83.33333%;
+}
+
+/* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+.offset-11 {
+  margin-left: 91.66667%;
+}
+
+@media (min-width: 576px) {
+  /* line 32, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-sm {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  /* line 37, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-sm-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-sm-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-sm-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-sm-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-sm-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-sm-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-sm-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-sm-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-sm-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-sm-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-sm-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-sm-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  /* line 49, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-sm-first {
+    order: -1;
+  }
+  /* line 51, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-sm-last {
+    order: 13;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-sm-0 {
+    order: 0;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-sm-1 {
+    order: 1;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-sm-2 {
+    order: 2;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-sm-3 {
+    order: 3;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-sm-4 {
+    order: 4;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-sm-5 {
+    order: 5;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-sm-6 {
+    order: 6;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-sm-7 {
+    order: 7;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-sm-8 {
+    order: 8;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-sm-9 {
+    order: 9;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-sm-10 {
+    order: 10;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-sm-11 {
+    order: 11;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-sm-12 {
+    order: 12;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-sm-0 {
+    margin-left: 0;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-sm-1 {
+    margin-left: 8.33333%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-sm-2 {
+    margin-left: 16.66667%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-sm-3 {
+    margin-left: 25%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-sm-4 {
+    margin-left: 33.33333%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-sm-5 {
+    margin-left: 41.66667%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-sm-6 {
+    margin-left: 50%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-sm-7 {
+    margin-left: 58.33333%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-sm-8 {
+    margin-left: 66.66667%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-sm-9 {
+    margin-left: 75%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-sm-10 {
+    margin-left: 83.33333%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-sm-11 {
+    margin-left: 91.66667%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 32, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-md {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  /* line 37, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-md-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-md-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-md-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-md-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-md-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-md-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-md-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-md-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-md-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-md-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  /* line 49, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-md-first {
+    order: -1;
+  }
+  /* line 51, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-md-last {
+    order: 13;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-md-0 {
+    order: 0;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-md-1 {
+    order: 1;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-md-2 {
+    order: 2;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-md-3 {
+    order: 3;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-md-4 {
+    order: 4;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-md-5 {
+    order: 5;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-md-6 {
+    order: 6;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-md-7 {
+    order: 7;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-md-8 {
+    order: 8;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-md-9 {
+    order: 9;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-md-10 {
+    order: 10;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-md-11 {
+    order: 11;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-md-12 {
+    order: 12;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-md-0 {
+    margin-left: 0;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-md-1 {
+    margin-left: 8.33333%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-md-2 {
+    margin-left: 16.66667%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-md-3 {
+    margin-left: 25%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-md-4 {
+    margin-left: 33.33333%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-md-5 {
+    margin-left: 41.66667%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-md-6 {
+    margin-left: 50%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-md-7 {
+    margin-left: 58.33333%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-md-8 {
+    margin-left: 66.66667%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-md-9 {
+    margin-left: 75%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-md-10 {
+    margin-left: 83.33333%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-md-11 {
+    margin-left: 91.66667%;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 32, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-lg {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  /* line 37, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-lg-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-lg-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-lg-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-lg-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-lg-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-lg-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-lg-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-lg-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-lg-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-lg-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-lg-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  /* line 49, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-lg-first {
+    order: -1;
+  }
+  /* line 51, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-lg-last {
+    order: 13;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-lg-0 {
+    order: 0;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-lg-1 {
+    order: 1;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-lg-2 {
+    order: 2;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-lg-3 {
+    order: 3;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-lg-4 {
+    order: 4;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-lg-5 {
+    order: 5;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-lg-6 {
+    order: 6;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-lg-7 {
+    order: 7;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-lg-8 {
+    order: 8;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-lg-9 {
+    order: 9;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-lg-10 {
+    order: 10;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-lg-11 {
+    order: 11;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-lg-12 {
+    order: 12;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-lg-0 {
+    margin-left: 0;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-lg-1 {
+    margin-left: 8.33333%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-lg-2 {
+    margin-left: 16.66667%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-lg-3 {
+    margin-left: 25%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-lg-4 {
+    margin-left: 33.33333%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-lg-5 {
+    margin-left: 41.66667%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-lg-6 {
+    margin-left: 50%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-lg-7 {
+    margin-left: 58.33333%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-lg-8 {
+    margin-left: 66.66667%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-lg-9 {
+    margin-left: 75%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-lg-10 {
+    margin-left: 83.33333%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-lg-11 {
+    margin-left: 91.66667%;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 32, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-xl {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  /* line 37, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-xl-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-xl-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-xl-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-xl-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-xl-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-xl-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-xl-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-xl-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-xl-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-xl-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-xl-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-xl-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .col-xl-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  /* line 49, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-xl-first {
+    order: -1;
+  }
+  /* line 51, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-xl-last {
+    order: 13;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-xl-0 {
+    order: 0;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-xl-1 {
+    order: 1;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-xl-2 {
+    order: 2;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-xl-3 {
+    order: 3;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-xl-4 {
+    order: 4;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-xl-5 {
+    order: 5;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-xl-6 {
+    order: 6;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-xl-7 {
+    order: 7;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-xl-8 {
+    order: 8;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-xl-9 {
+    order: 9;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-xl-10 {
+    order: 10;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-xl-11 {
+    order: 11;
+  }
+  /* line 54, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .order-xl-12 {
+    order: 12;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-xl-0 {
+    margin-left: 0;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-xl-1 {
+    margin-left: 8.33333%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-xl-2 {
+    margin-left: 16.66667%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-xl-3 {
+    margin-left: 25%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-xl-4 {
+    margin-left: 33.33333%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-xl-5 {
+    margin-left: 41.66667%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-xl-6 {
+    margin-left: 50%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-xl-7 {
+    margin-left: 58.33333%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-xl-8 {
+    margin-left: 66.66667%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-xl-9 {
+    margin-left: 75%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-xl-10 {
+    margin-left: 83.33333%;
+  }
+  /* line 60, src/wallet/assets/sass/_includes/Components/grid/mixins/_grid-framework.scss */
+  .offset-xl-11 {
+    margin-left: 91.66667%;
+  }
+}
+
+/* line 11, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+.d-none {
+  display: none !important;
+}
+
+/* line 12, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+.d-inline {
+  display: inline !important;
+}
+
+/* line 13, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+.d-inline-block {
+  display: inline-block !important;
+}
+
+/* line 14, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+.d-block {
+  display: block !important;
+}
+
+/* line 15, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+.d-table {
+  display: table !important;
+}
+
+/* line 16, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+.d-table-row {
+  display: table-row !important;
+}
+
+/* line 17, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+.d-table-cell {
+  display: table-cell !important;
+}
+
+/* line 18, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+.d-flex {
+  display: flex !important;
+}
+
+/* line 19, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+.d-inline-flex {
+  display: inline-flex !important;
+}
+
+@media (min-width: 576px) {
+  /* line 11, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-sm-none {
+    display: none !important;
+  }
+  /* line 12, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-sm-inline {
+    display: inline !important;
+  }
+  /* line 13, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-sm-inline-block {
+    display: inline-block !important;
+  }
+  /* line 14, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-sm-block {
+    display: block !important;
+  }
+  /* line 15, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-sm-table {
+    display: table !important;
+  }
+  /* line 16, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-sm-table-row {
+    display: table-row !important;
+  }
+  /* line 17, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-sm-table-cell {
+    display: table-cell !important;
+  }
+  /* line 18, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-sm-flex {
+    display: flex !important;
+  }
+  /* line 19, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-sm-inline-flex {
+    display: inline-flex !important;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 11, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-md-none {
+    display: none !important;
+  }
+  /* line 12, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-md-inline {
+    display: inline !important;
+  }
+  /* line 13, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-md-inline-block {
+    display: inline-block !important;
+  }
+  /* line 14, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-md-block {
+    display: block !important;
+  }
+  /* line 15, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-md-table {
+    display: table !important;
+  }
+  /* line 16, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-md-table-row {
+    display: table-row !important;
+  }
+  /* line 17, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-md-table-cell {
+    display: table-cell !important;
+  }
+  /* line 18, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-md-flex {
+    display: flex !important;
+  }
+  /* line 19, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-md-inline-flex {
+    display: inline-flex !important;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 11, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-lg-none {
+    display: none !important;
+  }
+  /* line 12, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-lg-inline {
+    display: inline !important;
+  }
+  /* line 13, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-lg-inline-block {
+    display: inline-block !important;
+  }
+  /* line 14, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-lg-block {
+    display: block !important;
+  }
+  /* line 15, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-lg-table {
+    display: table !important;
+  }
+  /* line 16, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-lg-table-row {
+    display: table-row !important;
+  }
+  /* line 17, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-lg-table-cell {
+    display: table-cell !important;
+  }
+  /* line 18, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-lg-flex {
+    display: flex !important;
+  }
+  /* line 19, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-lg-inline-flex {
+    display: inline-flex !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 11, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-xl-none {
+    display: none !important;
+  }
+  /* line 12, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-xl-inline {
+    display: inline !important;
+  }
+  /* line 13, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-xl-inline-block {
+    display: inline-block !important;
+  }
+  /* line 14, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-xl-block {
+    display: block !important;
+  }
+  /* line 15, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-xl-table {
+    display: table !important;
+  }
+  /* line 16, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-xl-table-row {
+    display: table-row !important;
+  }
+  /* line 17, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-xl-table-cell {
+    display: table-cell !important;
+  }
+  /* line 18, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-xl-flex {
+    display: flex !important;
+  }
+  /* line 19, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-xl-inline-flex {
+    display: inline-flex !important;
+  }
+}
+
+@media print {
+  /* line 29, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-print-none {
+    display: none !important;
+  }
+  /* line 30, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-print-inline {
+    display: inline !important;
+  }
+  /* line 31, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-print-inline-block {
+    display: inline-block !important;
+  }
+  /* line 32, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-print-block {
+    display: block !important;
+  }
+  /* line 33, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-print-table {
+    display: table !important;
+  }
+  /* line 34, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-print-table-row {
+    display: table-row !important;
+  }
+  /* line 35, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-print-table-cell {
+    display: table-cell !important;
+  }
+  /* line 36, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-print-flex {
+    display: flex !important;
+  }
+  /* line 37, src/wallet/assets/sass/_includes/Components/grid/utilities/_display.scss */
+  .d-print-inline-flex {
+    display: inline-flex !important;
+  }
+}
+
+/* line 11, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.flex-row {
+  flex-direction: row !important;
+}
+
+/* line 12, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.flex-column {
+  flex-direction: column !important;
+}
+
+/* line 13, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.flex-row-reverse {
+  flex-direction: row-reverse !important;
+}
+
+/* line 14, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.flex-column-reverse {
+  flex-direction: column-reverse !important;
+}
+
+/* line 16, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.flex-wrap {
+  flex-wrap: wrap !important;
+}
+
+/* line 17, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.flex-nowrap {
+  flex-wrap: nowrap !important;
+}
+
+/* line 18, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse !important;
+}
+
+/* line 19, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.flex-fill {
+  flex: 1 1 auto !important;
+}
+
+/* line 20, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.flex-grow-0 {
+  flex-grow: 0 !important;
+}
+
+/* line 21, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.flex-grow-1 {
+  flex-grow: 1 !important;
+}
+
+/* line 22, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.flex-shrink-0 {
+  flex-shrink: 0 !important;
+}
+
+/* line 23, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.flex-shrink-1 {
+  flex-shrink: 1 !important;
+}
+
+/* line 25, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.justify-content-start {
+  justify-content: flex-start !important;
+}
+
+/* line 26, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.justify-content-end {
+  justify-content: flex-end !important;
+}
+
+/* line 27, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.justify-content-center {
+  justify-content: center !important;
+}
+
+/* line 28, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
+/* line 29, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.justify-content-around {
+  justify-content: space-around !important;
+}
+
+/* line 31, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.align-items-start {
+  align-items: flex-start !important;
+}
+
+/* line 32, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.align-items-end {
+  align-items: flex-end !important;
+}
+
+/* line 33, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.align-items-center {
+  align-items: center !important;
+}
+
+/* line 34, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.align-items-baseline {
+  align-items: baseline !important;
+}
+
+/* line 35, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.align-items-stretch {
+  align-items: stretch !important;
+}
+
+/* line 37, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.align-content-start {
+  align-content: flex-start !important;
+}
+
+/* line 38, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.align-content-end {
+  align-content: flex-end !important;
+}
+
+/* line 39, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.align-content-center {
+  align-content: center !important;
+}
+
+/* line 40, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.align-content-between {
+  align-content: space-between !important;
+}
+
+/* line 41, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.align-content-around {
+  align-content: space-around !important;
+}
+
+/* line 42, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.align-content-stretch {
+  align-content: stretch !important;
+}
+
+/* line 44, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.align-self-auto {
+  align-self: auto !important;
+}
+
+/* line 45, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.align-self-start {
+  align-self: flex-start !important;
+}
+
+/* line 46, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.align-self-end {
+  align-self: flex-end !important;
+}
+
+/* line 47, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.align-self-center {
+  align-self: center !important;
+}
+
+/* line 48, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.align-self-baseline {
+  align-self: baseline !important;
+}
+
+/* line 49, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+.align-self-stretch {
+  align-self: stretch !important;
+}
+
+@media (min-width: 576px) {
+  /* line 11, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-sm-row {
+    flex-direction: row !important;
+  }
+  /* line 12, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-sm-column {
+    flex-direction: column !important;
+  }
+  /* line 13, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-sm-row-reverse {
+    flex-direction: row-reverse !important;
+  }
+  /* line 14, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-sm-column-reverse {
+    flex-direction: column-reverse !important;
+  }
+  /* line 16, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-sm-wrap {
+    flex-wrap: wrap !important;
+  }
+  /* line 17, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-sm-nowrap {
+    flex-wrap: nowrap !important;
+  }
+  /* line 18, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-sm-wrap-reverse {
+    flex-wrap: wrap-reverse !important;
+  }
+  /* line 19, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-sm-fill {
+    flex: 1 1 auto !important;
+  }
+  /* line 20, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-sm-grow-0 {
+    flex-grow: 0 !important;
+  }
+  /* line 21, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-sm-grow-1 {
+    flex-grow: 1 !important;
+  }
+  /* line 22, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-sm-shrink-0 {
+    flex-shrink: 0 !important;
+  }
+  /* line 23, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-sm-shrink-1 {
+    flex-shrink: 1 !important;
+  }
+  /* line 25, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .justify-content-sm-start {
+    justify-content: flex-start !important;
+  }
+  /* line 26, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .justify-content-sm-end {
+    justify-content: flex-end !important;
+  }
+  /* line 27, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .justify-content-sm-center {
+    justify-content: center !important;
+  }
+  /* line 28, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .justify-content-sm-between {
+    justify-content: space-between !important;
+  }
+  /* line 29, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .justify-content-sm-around {
+    justify-content: space-around !important;
+  }
+  /* line 31, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-items-sm-start {
+    align-items: flex-start !important;
+  }
+  /* line 32, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-items-sm-end {
+    align-items: flex-end !important;
+  }
+  /* line 33, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-items-sm-center {
+    align-items: center !important;
+  }
+  /* line 34, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-items-sm-baseline {
+    align-items: baseline !important;
+  }
+  /* line 35, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-items-sm-stretch {
+    align-items: stretch !important;
+  }
+  /* line 37, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-content-sm-start {
+    align-content: flex-start !important;
+  }
+  /* line 38, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-content-sm-end {
+    align-content: flex-end !important;
+  }
+  /* line 39, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-content-sm-center {
+    align-content: center !important;
+  }
+  /* line 40, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-content-sm-between {
+    align-content: space-between !important;
+  }
+  /* line 41, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-content-sm-around {
+    align-content: space-around !important;
+  }
+  /* line 42, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-content-sm-stretch {
+    align-content: stretch !important;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-self-sm-auto {
+    align-self: auto !important;
+  }
+  /* line 45, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-self-sm-start {
+    align-self: flex-start !important;
+  }
+  /* line 46, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-self-sm-end {
+    align-self: flex-end !important;
+  }
+  /* line 47, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-self-sm-center {
+    align-self: center !important;
+  }
+  /* line 48, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-self-sm-baseline {
+    align-self: baseline !important;
+  }
+  /* line 49, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-self-sm-stretch {
+    align-self: stretch !important;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 11, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-md-row {
+    flex-direction: row !important;
+  }
+  /* line 12, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-md-column {
+    flex-direction: column !important;
+  }
+  /* line 13, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-md-row-reverse {
+    flex-direction: row-reverse !important;
+  }
+  /* line 14, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-md-column-reverse {
+    flex-direction: column-reverse !important;
+  }
+  /* line 16, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-md-wrap {
+    flex-wrap: wrap !important;
+  }
+  /* line 17, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-md-nowrap {
+    flex-wrap: nowrap !important;
+  }
+  /* line 18, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-md-wrap-reverse {
+    flex-wrap: wrap-reverse !important;
+  }
+  /* line 19, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-md-fill {
+    flex: 1 1 auto !important;
+  }
+  /* line 20, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-md-grow-0 {
+    flex-grow: 0 !important;
+  }
+  /* line 21, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-md-grow-1 {
+    flex-grow: 1 !important;
+  }
+  /* line 22, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-md-shrink-0 {
+    flex-shrink: 0 !important;
+  }
+  /* line 23, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-md-shrink-1 {
+    flex-shrink: 1 !important;
+  }
+  /* line 25, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .justify-content-md-start {
+    justify-content: flex-start !important;
+  }
+  /* line 26, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .justify-content-md-end {
+    justify-content: flex-end !important;
+  }
+  /* line 27, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .justify-content-md-center {
+    justify-content: center !important;
+  }
+  /* line 28, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .justify-content-md-between {
+    justify-content: space-between !important;
+  }
+  /* line 29, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .justify-content-md-around {
+    justify-content: space-around !important;
+  }
+  /* line 31, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-items-md-start {
+    align-items: flex-start !important;
+  }
+  /* line 32, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-items-md-end {
+    align-items: flex-end !important;
+  }
+  /* line 33, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-items-md-center {
+    align-items: center !important;
+  }
+  /* line 34, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-items-md-baseline {
+    align-items: baseline !important;
+  }
+  /* line 35, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-items-md-stretch {
+    align-items: stretch !important;
+  }
+  /* line 37, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-content-md-start {
+    align-content: flex-start !important;
+  }
+  /* line 38, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-content-md-end {
+    align-content: flex-end !important;
+  }
+  /* line 39, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-content-md-center {
+    align-content: center !important;
+  }
+  /* line 40, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-content-md-between {
+    align-content: space-between !important;
+  }
+  /* line 41, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-content-md-around {
+    align-content: space-around !important;
+  }
+  /* line 42, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-content-md-stretch {
+    align-content: stretch !important;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-self-md-auto {
+    align-self: auto !important;
+  }
+  /* line 45, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-self-md-start {
+    align-self: flex-start !important;
+  }
+  /* line 46, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-self-md-end {
+    align-self: flex-end !important;
+  }
+  /* line 47, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-self-md-center {
+    align-self: center !important;
+  }
+  /* line 48, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-self-md-baseline {
+    align-self: baseline !important;
+  }
+  /* line 49, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-self-md-stretch {
+    align-self: stretch !important;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 11, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-lg-row {
+    flex-direction: row !important;
+  }
+  /* line 12, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-lg-column {
+    flex-direction: column !important;
+  }
+  /* line 13, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-lg-row-reverse {
+    flex-direction: row-reverse !important;
+  }
+  /* line 14, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-lg-column-reverse {
+    flex-direction: column-reverse !important;
+  }
+  /* line 16, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-lg-wrap {
+    flex-wrap: wrap !important;
+  }
+  /* line 17, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-lg-nowrap {
+    flex-wrap: nowrap !important;
+  }
+  /* line 18, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-lg-wrap-reverse {
+    flex-wrap: wrap-reverse !important;
+  }
+  /* line 19, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-lg-fill {
+    flex: 1 1 auto !important;
+  }
+  /* line 20, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-lg-grow-0 {
+    flex-grow: 0 !important;
+  }
+  /* line 21, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-lg-grow-1 {
+    flex-grow: 1 !important;
+  }
+  /* line 22, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-lg-shrink-0 {
+    flex-shrink: 0 !important;
+  }
+  /* line 23, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-lg-shrink-1 {
+    flex-shrink: 1 !important;
+  }
+  /* line 25, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .justify-content-lg-start {
+    justify-content: flex-start !important;
+  }
+  /* line 26, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .justify-content-lg-end {
+    justify-content: flex-end !important;
+  }
+  /* line 27, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .justify-content-lg-center {
+    justify-content: center !important;
+  }
+  /* line 28, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .justify-content-lg-between {
+    justify-content: space-between !important;
+  }
+  /* line 29, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .justify-content-lg-around {
+    justify-content: space-around !important;
+  }
+  /* line 31, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-items-lg-start {
+    align-items: flex-start !important;
+  }
+  /* line 32, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-items-lg-end {
+    align-items: flex-end !important;
+  }
+  /* line 33, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-items-lg-center {
+    align-items: center !important;
+  }
+  /* line 34, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-items-lg-baseline {
+    align-items: baseline !important;
+  }
+  /* line 35, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-items-lg-stretch {
+    align-items: stretch !important;
+  }
+  /* line 37, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-content-lg-start {
+    align-content: flex-start !important;
+  }
+  /* line 38, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-content-lg-end {
+    align-content: flex-end !important;
+  }
+  /* line 39, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-content-lg-center {
+    align-content: center !important;
+  }
+  /* line 40, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-content-lg-between {
+    align-content: space-between !important;
+  }
+  /* line 41, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-content-lg-around {
+    align-content: space-around !important;
+  }
+  /* line 42, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-content-lg-stretch {
+    align-content: stretch !important;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-self-lg-auto {
+    align-self: auto !important;
+  }
+  /* line 45, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-self-lg-start {
+    align-self: flex-start !important;
+  }
+  /* line 46, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-self-lg-end {
+    align-self: flex-end !important;
+  }
+  /* line 47, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-self-lg-center {
+    align-self: center !important;
+  }
+  /* line 48, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-self-lg-baseline {
+    align-self: baseline !important;
+  }
+  /* line 49, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-self-lg-stretch {
+    align-self: stretch !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 11, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-xl-row {
+    flex-direction: row !important;
+  }
+  /* line 12, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-xl-column {
+    flex-direction: column !important;
+  }
+  /* line 13, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-xl-row-reverse {
+    flex-direction: row-reverse !important;
+  }
+  /* line 14, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-xl-column-reverse {
+    flex-direction: column-reverse !important;
+  }
+  /* line 16, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-xl-wrap {
+    flex-wrap: wrap !important;
+  }
+  /* line 17, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-xl-nowrap {
+    flex-wrap: nowrap !important;
+  }
+  /* line 18, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-xl-wrap-reverse {
+    flex-wrap: wrap-reverse !important;
+  }
+  /* line 19, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-xl-fill {
+    flex: 1 1 auto !important;
+  }
+  /* line 20, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-xl-grow-0 {
+    flex-grow: 0 !important;
+  }
+  /* line 21, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-xl-grow-1 {
+    flex-grow: 1 !important;
+  }
+  /* line 22, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-xl-shrink-0 {
+    flex-shrink: 0 !important;
+  }
+  /* line 23, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .flex-xl-shrink-1 {
+    flex-shrink: 1 !important;
+  }
+  /* line 25, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .justify-content-xl-start {
+    justify-content: flex-start !important;
+  }
+  /* line 26, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .justify-content-xl-end {
+    justify-content: flex-end !important;
+  }
+  /* line 27, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .justify-content-xl-center {
+    justify-content: center !important;
+  }
+  /* line 28, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .justify-content-xl-between {
+    justify-content: space-between !important;
+  }
+  /* line 29, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .justify-content-xl-around {
+    justify-content: space-around !important;
+  }
+  /* line 31, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-items-xl-start {
+    align-items: flex-start !important;
+  }
+  /* line 32, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-items-xl-end {
+    align-items: flex-end !important;
+  }
+  /* line 33, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-items-xl-center {
+    align-items: center !important;
+  }
+  /* line 34, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-items-xl-baseline {
+    align-items: baseline !important;
+  }
+  /* line 35, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-items-xl-stretch {
+    align-items: stretch !important;
+  }
+  /* line 37, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-content-xl-start {
+    align-content: flex-start !important;
+  }
+  /* line 38, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-content-xl-end {
+    align-content: flex-end !important;
+  }
+  /* line 39, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-content-xl-center {
+    align-content: center !important;
+  }
+  /* line 40, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-content-xl-between {
+    align-content: space-between !important;
+  }
+  /* line 41, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-content-xl-around {
+    align-content: space-around !important;
+  }
+  /* line 42, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-content-xl-stretch {
+    align-content: stretch !important;
+  }
+  /* line 44, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-self-xl-auto {
+    align-self: auto !important;
+  }
+  /* line 45, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-self-xl-start {
+    align-self: flex-start !important;
+  }
+  /* line 46, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-self-xl-end {
+    align-self: flex-end !important;
+  }
+  /* line 47, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-self-xl-center {
+    align-self: center !important;
+  }
+  /* line 48, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-self-xl-baseline {
+    align-self: baseline !important;
+  }
+  /* line 49, src/wallet/assets/sass/_includes/Components/grid/utilities/_flex.scss */
+  .align-self-xl-stretch {
+    align-self: stretch !important;
+  }
+}
+
+/* line 38, src/wallet/assets/sass/_includes/Components/grid/mixins/_image.scss */
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 26, src/wallet/assets/sass/index.scss */
+body {
+  font-family: Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+  color: #2c3e50;
+  background: #fbfbfb;
+}
+
+/* line 44, src/wallet/assets/sass/index.scss */
+.container-tabs {
+  display: flex;
+  border-bottom: 1px solid #e6e6e6;
+  color:#fff;
+}
+.d-flex.centralize{
+color: #fff;
+}
+
+/* line 46, src/wallet/assets/sass/index.scss */
+.container-tabs .item-wrapper__tab {
+  margin-right: 25px;
+  padding: 20px 0;
+  cursor: pointer;
+  position: relative;
+}
+
+/* line 51, src/wallet/assets/sass/index.scss */
+.container-tabs .item-wrapper__tab span {
+  color: #9a9a9a;
+  font-size: 14px;
+}
+
+/* line 56, src/wallet/assets/sass/index.scss */
+.container-tabs .item-wrapper__tab.active span {
+  color: #FFF;
+}
+
+/* line 59, src/wallet/assets/sass/index.scss */
+.container-tabs .item-wrapper__tab.active::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  background: #1dd1a1;
+  width: 100% inherit;
+  width: 100%;
+  height: 4px;
+  border-radius: 6px 6px 0 0;
+}
+
+/* line 75, src/wallet/assets/sass/index.scss */
+.--dark {
+  background: #48484a;
+}
+
+/* line 78, src/wallet/assets/sass/index.scss */
+.--dark:checked {
+  background: #1dd1a1;
+}
+
+/* line 81, src/wallet/assets/sass/index.scss */
+.--dark:disabled {
+  opacity: 0.5;
+}
+
+/* line 85, src/wallet/assets/sass/index.scss */
+.--light {
+  background: #c7c7cc;
+}
+
+/* line 88, src/wallet/assets/sass/index.scss */
+.--light:checked {
+  background: #1dd1a1;
+}
+
+/* line 91, src/wallet/assets/sass/index.scss */
+.--light:disabled {
+  opacity: 0.5;
+}
+
+/* line 95, src/wallet/assets/sass/index.scss */
+.ios-switch {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: 0;
+  border-radius: 1em;
+  position: relative;
+  width: 3.4em;
+  height: 1.8em;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* line 108, src/wallet/assets/sass/index.scss */
+.ios-switch:after {
+  content: "";
+  position: absolute;
+  width: 1.5em;
+  height: 1.5em;
+  top: 2px;
+  left: 0.3em;
+  background: white;
+  border-radius: 50%;
+  transition: all 0.1s;
+  box-shadow: 1px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* line 120, src/wallet/assets/sass/index.scss */
+.ios-switch:checked:after {
+  transform: translateX(1.4em);
+  box-shadow: -1px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* line 125, src/wallet/assets/sass/index.scss */
+.ml-auto {
+  margin-left: auto;
+}
+
+/* line 128, src/wallet/assets/sass/index.scss */
+.centralize {
+  padding: 15px 0;
+}
+
+/* line 130, src/wallet/assets/sass/index.scss */
+.centralize h2 {
+  font-size: 20px;
+}
+
+/* line 134, src/wallet/assets/sass/index.scss */
+.filters-container {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 10px 0;
+  padding-bottom: 20px;
+}
+
+/* line 139, src/wallet/assets/sass/index.scss */
+.item__filter {
+  padding: 5px 25px;
+  margin-right: 20px;
+  line-height: 34px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.08);
+  margin-right: 20px;
+  min-width: 110px;
+  border: 1px solid;
+  border-color: #1dd1a1;
+  text-align: center;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: 0.7s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-transform: uppercase;
+}
+
+/* line 150, src/wallet/assets/sass/index.scss */
+.item__filter span {
+  font-size: 14px;
+  color: #9a9a9a;
+}
+
+/* line 154, src/wallet/assets/sass/index.scss */
+.item__filter:hover {
+  background: #1dd1a1;
+  color:#FFFF;
+}
+
+/* line 156, src/wallet/assets/sass/index.scss */
+
+
+/* line 162, src/wallet/assets/sass/index.scss */
+.pagination-table {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+/* line 167, src/wallet/assets/sass/index.scss */
+.pagination-table .prev-table {
+  cursor: pointer;
+  border-radius: 35px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.08);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.7s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid;
+  border-color: transparent;
+  margin-right: 10px;
+}
+
+/* line 180, src/wallet/assets/sass/index.scss */
+.pagination-table .prev-table:hover {
+  border-color: #1dd1a1;
+  color: #1dd1a1;
+}
+
+/* line 183, src/wallet/assets/sass/index.scss */
+.pagination-table .prev-table:hover svg {
+  fill: #1dd1a1;
+}
+
+/* line 187, src/wallet/assets/sass/index.scss */
+.pagination-table .prev-table svg {
+  fill: #9a9a9a;
+}
+
+/* line 191, src/wallet/assets/sass/index.scss */
+.pagination-table .next-table {
+  cursor: pointer;
+  border-radius: 35px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.08);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.7s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid;
+  border-color: transparent;
+}
+
+/* line 203, src/wallet/assets/sass/index.scss */
+.pagination-table .next-table:hover {
+  border-color: #1dd1a1;
+  color: #1dd1a1;
+}
+
+/* line 206, src/wallet/assets/sass/index.scss */
+.pagination-table .next-table:hover svg {
+  fill: #1dd1a1;
+}
+
+/* line 210, src/wallet/assets/sass/index.scss */
+.pagination-table .next-table svg {
+  fill: #9a9a9a;
+}
+
+/* line 216, src/wallet/assets/sass/index.scss */
+.table-coins {
+  width: 100%;
+}
+
+/* line 220, src/wallet/assets/sass/index.scss */
+.table-coins thead tr th {
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+/* line 230, src/wallet/assets/sass/index.scss */
+.balances__table small {
+  display: table;
+  width: 100%;
+}
+
+/* line 233, src/wallet/assets/sass/index.scss */
+.balances__table small .balances__row.balances__row_head {
+  display: table-row;
+  border-radius: 12px;
+  cursor: pointer;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* line 242, src/wallet/assets/sass/index.scss */
+.balances__table small .balances__row:nth-child(2n+1) {
+  background: rgba(228, 228, 228, 0.2);
+}
+
+/* line 245, src/wallet/assets/sass/index.scss */
+.balances__table small body.dark .balances__row:nth-child(2n+1) {
+  background: rgba(228, 228, 228, 0.04);
+}
+
+/* line 249, src/wallet/assets/sass/index.scss */
+.balances__title {
+  margin-bottom: 32px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 254, src/wallet/assets/sass/index.scss */
+  .balances__title {
+    margin-bottom: 24px;
+  }
+}
+
+/* line 259, src/wallet/assets/sass/index.scss */
+.balances__table {
+  display: table;
+  margin-top: 22px;
+  width: 100%;
+}
+.balances__row{
+  color: #fff;
+}
+.balances__row.balances__row_head{
+  margin-bottom: 17px;
+  transform: translateY(-5px) !important;
+  border-radius: 20px !important;
+  font-weight: 900;
+}
+
+/* line 264, src/wallet/assets/sass/index.scss */
+.balances__row {
+  display: table-row;
+  border-radius: 12px;
+  cursor: pointer;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /*background: #d8d8d8;*/
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all .9s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: all;
+}
+
+.balances__logo img{
+  transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+  transform: scale(0);
+}
+
+.balances__row.fade .balances__logo img{
+  transform: scale(1);
+}
+.balances__row.fade{
+  opacity: 1;
+  transform: translateY(0px);
+} 
+
+/* line 272, src/wallet/assets/sass/index.scss */
+.balances__row:nth-child(2n+1) {
+  /*background: rgba(228, 228, 228, 0.9);*/
+}
+
+/* line 276, src/wallet/assets/sass/index.scss */
+
+.balances__row .{
+
+}
+/* line 281, src/wallet/assets/sass/index.scss */
+.balances__cell {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 24px;
+  font-size: 13px;
+}
+
+/* line 286, src/wallet/assets/sass/index.scss */
+.balances__cell svg {
+  fill: #9a9a9a;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 292, src/wallet/assets/sass/index.scss */
+  .balances__cell {
+    padding-left: 16px;
+  }
+}
+
+/* line 297, src/wallet/assets/sass/index.scss */
+.balances__cell:first-child {
+
+ 
+}
+/* line 373, src/wallet/assets/sass/index.scss */
+.balances__row:not(.balances__row_head) .balances__cell {
+  border-bottom: 1px solid #c3c3c37a !important;
+}
+
+
+.balances__cell:first-child > div {
+  margin-right: 10px;
+}
+
+/* line 305, src/wallet/assets/sass/index.scss */
+.balances__cell:nth-child(3) {
+  font-weight: 600;
+
+}
+
+@media only screen and (max-width: 1023px) {
+  /* line 311, src/wallet/assets/sass/index.scss */
+  .balances__cell:nth-child(3), .balances__cell:nth-child(4) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 317, src/wallet/assets/sass/index.scss */
+  .balances__cell:nth-child(n+3) {
+    display: none;
+  }
+}
+
+/* line 322, src/wallet/assets/sass/index.scss */
+.balances__cell:last-child {
+  padding-right: 24px;
+ 
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 328, src/wallet/assets/sass/index.scss */
+  .balances__cell:last-child {
+    display: table-cell;
+    padding-right: 16px;
+  }
+}
+
+@media only screen and (max-width: 1339px) {
+  /* line 337, src/wallet/assets/sass/index.scss */
+  .balances__table.small .balances__cell:nth-child(4),
+  .balances__table.small .balances__cell:nth-child(5) {
+    display: table-cell;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 344, src/wallet/assets/sass/index.scss */
+  .balances__table.small .balances__cell:nth-child(4),
+  .balances__table.small .balances__cell:nth-child(5) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  /* line 351, src/wallet/assets/sass/index.scss */
+  .balances__table.small .balances__cell:nth-child(4) {
+    display: none;
+  }
+}
+
+/* line 356, src/wallet/assets/sass/index.scss */
+.balances__row_head .balances__cell {
+  height: 15px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #808191;
+}
+
+/* line 365, src/wallet/assets/sass/index.scss */
+
+
+/* line 369, src/wallet/assets/sass/index.scss */
+.balances__row_head .balances__cell:last-child {
+ 
+}
+
+
+
+/* line 377, src/wallet/assets/sass/index.scss */
+.balances__company {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+/* line 383, src/wallet/assets/sass/index.scss */
+.balances__logo {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+}
+
+/* line 390, src/wallet/assets/sass/index.scss */
+.balances__logo img {
+  width: 100%;
+  min-height: 100%;
+  border-radius: 50%;
+}
+
+/* line 396, src/wallet/assets/sass/index.scss */
+.balances__number {
+  font-weight: 600;
+}
+
+/* line 400, src/wallet/assets/sass/index.scss */
+.balances__price {
+  font-size: 12px;
+  line-height: 1.33333;
+  font-weight: 500;
+  color: #808191;
+}
+
+/* line 407, src/wallet/assets/sass/index.scss */
+.balances__btns {
+  margin-top: 32px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 413, src/wallet/assets/sass/index.scss */
+  .balances__btns {
+    margin-top: 24px;
+  }
+}
+
+/* line 418, src/wallet/assets/sass/index.scss */
+body.dark .balances__row:nth-child(2n+1) {
+  /*background: rgba(228, 228, 228, 0.04);*/
+}
+
+/* line 423, src/wallet/assets/sass/index.scss */
+.alert-coin {
+  padding: 10px;
+  background-color: #1dd1a1;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+/* line 430, src/wallet/assets/sass/index.scss */
+.alert-coin svg {
+  fill: #fff;
+}
+
+/* line 435, src/wallet/assets/sass/index.scss */
+.main-nav {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+/* line 440, src/wallet/assets/sass/index.scss */
+.main-nav {
+  width: 100%;
+  background: #fff;
+}
+
+/* line 445, src/wallet/assets/sass/index.scss */
+.main-sub--ul {
+  display: flex;
+  align-items: center;
+}
+
+/* line 448, src/wallet/assets/sass/index.scss */
+.main-sub--ul li {
+  padding: 20px 0;
+  margin-left: 45px;
+  position: relative;
+}
+
+/* line 33, src/wallet/assets/sass/index.scss */
+.main-sub--ul li.active::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  background: #1dd1a1;
+  width: 100% inherit;
+  width: 100%;
+  height: 4px;
+  border-radius: 6px 6px 0 0;
+}
+
+/* line 453, src/wallet/assets/sass/index.scss */
+.main-sub--ul li.active a {
+  color: #1dd1a1;
+}
+
+/* line 458, src/wallet/assets/sass/index.scss */
+.main-sub--ul li svg {
+  fill: #9a9a9a;
+}
+
+/* line 461, src/wallet/assets/sass/index.scss */
+.main-sub--ul li a {
+  color: #9a9a9a;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.7s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* line 468, src/wallet/assets/sass/index.scss */
+.main-sub--ul li a:hover {
+  color: #1dd1a1;
+}
+
+/* line 472, src/wallet/assets/sass/index.scss */
+.main-sub--ul li.register-li--btn {
+  padding: 0;
+}
+
+/* line 474, src/wallet/assets/sass/index.scss */
+.main-sub--ul li.register-li--btn a {
+  padding: 10px 25px;
+  border-radius: 35px;
+  background-color: #1dd1a1;
+  color: #FFF;
+}
+
+/* line 483, src/wallet/assets/sass/index.scss */
+.princial--wrapper-nav {
+  border-bottom: 1px solid #e6e6e6;
+  height: 95px;
+  background: #fff;
+}
+
+/* line 489, src/wallet/assets/sass/index.scss */
+.h100 {
+  height: 100%;
+}
+
+/* line 492, src/wallet/assets/sass/index.scss */
+.p20 {
+  padding: 20px;
+}
+
+/* line 495, src/wallet/assets/sass/index.scss */
+.logo--main {
+  display: flex;
+  align-items: center;
+}
+
+/* line 498, src/wallet/assets/sass/index.scss */
+.logo--main img {
+  height: 34px;
+}
+
+/* line 502, src/wallet/assets/sass/index.scss */
+.search--inner-input {
+  margin-left: auto;
+  height: 100%;
+}
+
+/* line 505, src/wallet/assets/sass/index.scss */
+.search--inner-input input {
+  transition: 0.7s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.08);
+  border: none;
+  border-radius: 35px;
+  height: 100%;
+  outline: none;
+  padding-left: 25px;
+  font-size: 13px;
+}
+
+/* line 514, src/wallet/assets/sass/index.scss */
+.search--inner-input input:active {
+  outline: 0;
+}
+
+/* line 517, src/wallet/assets/sass/index.scss */
+.search--inner-input input::placeholder {
+  font-size: 13px;
+  color: #9a9a9a;
+  opacity: .6;
+}
+
+/* line 526, src/wallet/assets/sass/index.scss */
+.info-crypto {
+  padding: 17px 0;
+  background-color: #fff;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+/* line 530, src/wallet/assets/sass/index.scss */
+.info-crypto .item--crypto {
+  color: #2c3e50;
+  font-size: 12px;
+  margin-right: 25px;
+}
+
+/* line 534, src/wallet/assets/sass/index.scss */
+.info-crypto .item--crypto strong {
+  color: #1dd1a1;
+}
+
+/* line 541, src/wallet/assets/sass/index.scss */
+.passive-hover {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.7s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin-left: 15px;
+}
+
+/* line 550, src/wallet/assets/sass/index.scss */
+.passive-hover:hover {
+  background-color: #f3f3f3;
+}
+
+/*# sourceMappingURL=index.css.map */
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    height: 100vh;
+    font-family: 'Poppins';
+    background: #1F2128;
+    
+}
+body{
+    overflow-x: hidden;
+}
+.webgl
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    mix-blend-mode: color-dodge;
+    mix-blend-mode: color-dodge;
+}
+.containerwebgl{
+   
+    display: grid;
+    place-content: center;
+   margin-bottom: 24px;
+    z-index: 1;
+    width: 100%;
+ 
+
+}
+.contentwebgl {
+    display: flex;
+    gap: 5em;
+    width: 100%;
+    padding-top: 3em;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.contentwebgl:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid white;
+    transform: scaleX(1);
+}
+h1{
+    text-transform: uppercase;
+    color: #FFF;
+    width: 6vw;
+    line-height: 97%;
+    font-size: 4rem;
+    text-align: right;
+}
+h1, p{
+    flex-basis: 0;
+    flex-grow: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+p{
+    font-size: 1.3rem;
+    width: 40vw;
+    color:#fff;
+}
+
+
+
+
+.balances__row_head{
+  background-color: transparent !important;
+}
+
+
+.balances__row_head .balances__cell{
+  background: transparent !important;
+  color:#fff;
+  border-bottom: 1px solid #868686;
+  padding-bottom: 15px;
+}
+
+.balances__row_head .balances__cell:first-child{
+  
+}
+
+.balances__row_head .balances__cell:last-child{
+
+}
+
+.balances__row .balances__cell{
+  background: transparent;
+}
+.balances__row:nth-child(2n+1) .balances__cell{
+  background: transparent;
+}
+
+
+
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.balances__row:nth-child(2) .balances__cell:first-child{
+  border-radius: 12px 0 0 0;
+}
+.balances__row:nth-child(2) .balances__cell:last-child{
+  border-radius: 0 12px 0 0;
+}
+
+.balances__row:last-child .balances__cell:first-child{
+  border-radius: 0 0 0 12px;
+}
+
+.balances__row:last-child .balances__cell:last-child{
+  border-radius: 0 0 12px  0;
+}
+
+
+.item__filter{
+  transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: translateY(-100px);
+  opacity: 0;
+}
+
+.item__filter.open{
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.item__filter span{
+  color: #dedede;
+}
+
+
+.item-c{
+  transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: translateY(-100px);
+  opacity: 0;
+}
+
+.item-c.open{
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+
+.pagination-table .prev-table{
+  border-color: #1dd1a1;
+}
+.pagination-table .next-table{
+  border-color: #1dd1a1;
+}
+
+.content-stat{
+  background-color: #242731;
+  padding: 15px 20px;
+  border-radius: 10px;
+  color:#fff;
+}
+
+.content-stat span{
+  font-size: 14px;
+
+}
+
+.text-align-left{
+  text-align: left;
+}
+
+.main-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: -webkit-sticky;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1000;
+  height: 3.68421rem;
+  min-height: 3.68421rem;
+  background: rgb(36, 39, 49);
+  color:#FFF;
+}
+.height100{
+  height: 100%;
+}
+.main-header .guide {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.main-header .header-guide {
+  z-index: 1000;
+}
+.guide {
+  padding: 0 1.57895rem;
+  width: 100%;
+  max-width: 75.78947rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.guide {
+  padding: 0 1.57895rem;
+  width: 100%;
+  max-width: 75.78947rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.default-logo-container .logo-image {
+  width: 6.31579rem;
+  cursor: pointer;
+}
+
+.main-header .header-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.logo{
+  height: 100%;
+}
+
+.login button{
+  background: transparent;
+  border: none;
+  font-size: 13px;
+}
+
+.register button{
+  background: transparent;
+  border: none;
+  font-size: 13px;
+  background: #1DD1A1;
+  padding: 9px 24px;
+  margin-left: 23px;
+  border-radius: 10px;
+}
+.search-input{
+  padding-left: 20px;
+  border-left: 1px solid #6b6b6b;
+}
+.search-input input{
+  font-size: 13px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #6b6b6b;
+  background: transparent;
+  color: #fff;
+  margin-right: 15px;
+
+}
+
+.ul-items{
+  display: flex;
+  align-items: center;
+}
+
+.ul-items li{
+  font-size: 12px;
+  margin-right: 40px;
+}
+
+.ul-items li a.active{
+  color: #1DD1A1;
+}
+  
+  .select-length{
+    font-size: 12px;
+    color: #fff;
+    margin-right: 17px;
+  }
+
+  .select-length select{
+    background: #242731;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 9px;
+    margin-left: 9px;
+  }
+
+/*# sourceMappingURL=main.css.map*/
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* line 8, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+html {
+  font-family: 'Poppins', sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  line-height: 1.5;
+  moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased;
+  height: 100%;
+}
+
+/* line 22, src/wallet/assets/sass/_includes/Components/base/_base.scss */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: scotch-color("text", "for-text");
+  height: 100%;
+  background-color: scotch-color("text", "light-after");
+}
+
+.login__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.login__col:first-child {
+    position: relative;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 44%;
+    flex: 0 0 44%;
+    width: 44%;
+    background: #6C5DD3;
+    color: #ffffff;
+}
+
+.login__logo {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.h1 {
+    font-size: 56px;
+    line-height: 1.14286;
+    letter-spacing: -1px;
+}
+
+
+
+.login__col {
+    padding: 80px;
+}
+.login__col:nth-child(2) {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 56%;
+    flex: 0 0 56%;
+    width: 56%;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+
+.login__field:not(:last-child) {
+    margin-bottom: 16px;
+}
+.field {
+    position: relative;
+}
+
+.field__label {
+    position: absolute;
+    top: 32px;
+    right: 24px;
+    left: 24px;
+    pointer-events: none;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: .9px;
+    text-transform: uppercase;
+    color: #808191;
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    -o-transition: transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+}
+
+body.dark .field__input {
+    background: rgba(228, 228, 228, 0.03);
+    color: #ffffff;
+}
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    -webkit-appearance: none;
+}
+.field__input {
+    width: 100%;
+    height: 80px;
+    padding: 18px 22px 0;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    background: rgba(228, 228, 228, 0.3);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #11142D;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+
+body.dark {
+    background: #1F2128;
+    color: #ffffff;
+}
+
+.login__form {
+    position: relative;
+    z-index: 3;
+    max-width: 412px;
+    margin: auto;
+}
+
+.login__col:nth-child(2) {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 56%;
+    flex: 0 0 56%;
+    width: 56%;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+
+.login__field:not(:last-child) {
+    margin-bottom: 16px;
+}
+.field {
+    position: relative;
+}
+
+.field.active .field__label {
+    -webkit-transform: translateY(-12px);
+    -ms-transform: translateY(-12px);
+    transform: translateY(-12px);
+}
+
+.login__links:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.login__link {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: #355DFF;
+    -webkit-transition: color .2s;
+    -o-transition: color .2s;
+    transition: color .2s;
+}
+
+.login__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.btn[href] {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-decoration: none;
+}
+.btn_wide {
+    min-width: 100%;
+}
+.btn_blue {
+    background:  #1DD1A1;
+    color: #ffffff;
+}
+.btn {
+    min-width: 114px;
+    height: 48px;
+    padding: 0 24px;
+    border-radius: 12px;
+
+    font-size: 14px;
+    font-weight: 600;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+
+.login__stage{
+    font-size: 31px;
+    text-align: center;
+    margin-bottom: 61px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn_wide{
+    width: 100%;
+}
+
+.breadcrumb {
+  padding: 6px 0;
+  background: 0 0;
+  color: #8e8e8e;
+  margin-bottom: 0;
+  font-weight: 500;
+  height: 35px;
+  white-space: pre;
+  display: flex;
+  align-items: center;
+
+}
+.breadcrumb a{
+  font-size: 14px;
+}
+.breadcrumb span{
+  font-size: 14px;
+}
+.breadcrumb svg{
+  fill: #fff;
+  width: 13px;
+  height: 100%;
+  margin: 0 11px;
+}
+.m-b-200{
+  margin-bottom: 200px;
+}
+.svg{
+  fill: #fff;
+}
+.coin-img-rounder{
+  margin-top: 17px;
+  display: flex;
+  align-items: center;
+}
+.coin-img-rounder span{
+  margin-left: 19px;
+  color: #ffff;
+  letter-spacing: 0.4px;
+}
+.coin-img-rounder img{
+  display: flex;
+  align-items: center;
+  height: 76px;
+}
+.container-svg{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid;
+  cursor: pointer;
+  transition: .5s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.container-svg:hover{
+  background-color: #1DD1A1;
+}
+.h2-price{
+  font-size: 37px;
+  margin-top: 11px;
+  color: #fff;
+  text-align: left;
+  font-weight: 900;
+
+}
+.container-svg:hover svg{
+
+}
+.container-without-svg{
+  display: flex;
+    align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.text-danger {
+  color: #e15241;
+}
+.content-header{
+  text-align: left;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #b3b3b3;
+}
+.exchange-price{
+  font-size: 15px;
+  border-radius: .375rem;
+  color:#fff;
+  font-weight: 600;
+  padding: 5px 10px;
+  background-color: #ff7675;
+}
+
+.content-body{
+  padding-top: 20px;
+  text-align: right;
+  padding-top: 20px;
+    text-align: right;
+    font-size: 12px;
+    color: #fdfdfd;
+    font-weight: 900;
+}
+
+.width50{
+  width: 50%;
+}
+
+.mb-3{
+  margin-bottom: 3rem;
+}
+
+
+.mb-1{
+  margin-bottom: 1rem;
+}
+
+.wrap{
+  flex-wrap: wrap;
+}
+.text-white{
+  color:#FFF;
+}
+.ranking-total svg{
+  width: 19px;
+    margin-right: 7px;
+}
+.ranking-total {
+  padding: 10px 7px;
+  background: #484848;
+  font-size: 13px;
+  text-transform: uppercase;
+  border-radius: 12px;
+  font-weight: 600;
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.content-stat:before{
+  content: "";
+}
+.justify-content-end{
+  justify-content: flex-end;
+}
+
+.content-stat{
+  position: relative;
+  overflow: hidden;
+}
+
+.content-stat:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 7px;
+  height: 100%;
+  background: #3699ff!important;
+  top: 0;
+  border-radius: 0px 10px 10px 0;
+}
+
+
+.acciones-crypto{
+  background: #1dd1a1;
+  padding: 10px 15px;
+  color: #fff;
+  border: none;
+  border-radius: 11px;
+  display: flex;
+    flex-direction: column;
+    padding: 26px 10px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+
+}
+
+.acciones-crypto svg{
+  fill:#fff;
+  margin-bottom: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.m-t-20{
+  margin-top: 20px;
+}
+.bg-light-primary {
+  background-color: #e1f0ff!important;
+}
+
+.text-primary {
+  color: #3699ff!important;
+}
+
+.text-primary svg {
+  fill: #3699ff!important;
+}
+
+.coin-link-row {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 3px;
+}
+.\32xl\:tw-min-w-1\/4 {
+  min-width: 25%;
+}
+
+.tw-text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgba(107,114,128,var(--tw-text-opacity));
+}
+
+.content-stat.no-before::before{
+  background-color: transparent !important;
+}
+
+.coin-link-row {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 3px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #6d6d6d;
+  margin-bottom: 20px;
+}
+
+.tw-text-gray-800 {
+  --tw-text-opacity: 1;
+  color: rgba(31, 41, 55, var(--tw-text-opacity));
+}
+
+.tw-px-2\.5 {
+  padding-left: .625rem;
+  padding-right: .625rem;
+}
+.tw-py-1 {
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+}
+.tw-mr-1 {
+  margin-right: .25rem;
+}
+.tw-my-0\.5 {
+  margin-top: .125rem;
+  margin-bottom: .125rem;
+}
+.tw-text-sm {
+  font-size: 11px;
+  line-height: 1.25rem;
+}
+.tw-font-medium {
+  font-weight: 500;
+}
+.tw-rounded-md {
+  border-radius: .375rem;
+}
+.tw-bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+}
+
+.tw-font-normal {
+  font-weight: 400;
+}
+
+.tw-flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap!important;
+}
+.input-default{
+  
+  background: #00000017;
+  border: none;
+  border-radius: 2px;
+  padding: 12px;
+
+}
+
+.coin-bg{
+  height: 100%;
+  background: #5252521a;
+  width: 100%;
+  padding: 10px;
+}

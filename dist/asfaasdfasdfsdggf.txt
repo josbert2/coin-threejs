@@ -1,0 +1,18 @@
+Abrir modal en vista en mi compra solo cuando es futura solo si es buin zoo
+
+
+Si es proveedor en ticket colocar boton de agenta tu vitisa aqui
+
+
+Añadir blank target 
+
+acomodar check de categorias pelotitas por medio de url y desactivar la categoria padre
+quitatr overlay de categorias
+
+Revisar mapa
+
+
+breadcrumb para categoria lista pelotitas
+
+
+ocultar tema de botones mobile
