@@ -4355,3 +4355,18 @@ body.dark {
   width: 100%;
   padding: 10px;
 }
+
+
+.tab-item{
+  display: none;
+}
+
+.is-active{
+  border-bottom-color:  #1DD1A1;
+  color: #1DD1A1;
+}
+
+.is-active:hover{
+  border-bottom-color:  #1DD1A1 !important;
+  color: #1DD1A1 !important;
+}

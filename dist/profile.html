@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="tailwind.css">
     <link rel="stylesheet" href="main.css">
     <style>        body {
         margin: 0;
@@ -474,6 +475,22 @@ position: fixed !important;
                                         </div>
                                     </div>
                                 </div>
+                                <div class="m-t-20">
+                                  
+                                        <div class="filters-container d-flex align-items-center sliders" >
+                                            <div class="item__filter open" style="transition-delay: 0s;">
+                                                <span>Panorama</span>
+                                            </div>
+                                            <div class="item__filter open" style="transition-delay: 0.09s;">
+                                                <span>Mercado</span>
+                                            </div>
+                                            
+                                           
+                    
+                                        </div>
+                                 
+                                  
+                                </div>
                             </div>
                             <div class="ml-auto"  style="flex: 1 1 30%;">
                                 <div class="d-flex justify-content-end">
@@ -573,6 +590,132 @@ position: fixed !important;
                       
                     </div>
                 </div>
+                <div class="container">
+                    
+                    <div class="mb-8" id="default-tab">
+                        <div class="sm:hidden">
+                          <label for="tabs" class="sr-only">Select a tab</label>
+                          <select id="tabs" name="tabs" class="block w-full focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
+                            <option selected>My Account</option>
+                      
+                            <option>Company</option>
+                      
+                            <option>Team Members</option>
+                      
+                            <option>Billing</option>
+                          </select>
+                        </div>
+                        <div class="hidden sm:block ">
+                            <nav class="-mb-px flex space-x-8 border-t-2 border-current border-gray-300" aria-label="Tabs" id="tabs">
+                                <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-200" -->
+                                <a href="#tab1" data-target="tab1"  class="tabs border-transparent text-gray-200 hover:text-gray-300 hover:border-gray-200 whitespace-nowrap flex py-4 px-1 border-b-2 font-medium text-sm">
+                                  Panorama
+                                </a>
+                        
+                                <a href="#tab2" data-target="tab2"  class="tabs border-transparent text-gray-200 hover:text-gray-300 hover:border-gray-200 whitespace-nowrap flex py-4 px-1 border-b-2 font-medium text-sm">
+                                  Mercado
+                                </a>
+                        
+                                <a href="#tab3" data-target="tab3"  class="tabs border-transparent text-gray-200 hover:text-gray-300 hover:border-gray-200 whitespace-nowrap flex py-4 px-1 border-b-2 font-medium text-sm" aria-current="page">
+                                  Datos anteriores
+                                </a>
+                        
+                                <a href="#tab4" data-target="tab4"  class="tabs border-transparent text-gray-200 hover:text-gray-300 hover:border-gray-200 whitespace-nowrap flex py-4 px-1 border-b-2 font-medium text-sm">
+                                  Holders
+                                </a>
+                        
+                                <a href="#tab5" data-target="tab5" class=" tabs border-transparent text-gray-200 hover:text-gray-300 hover:border-gray-200 whitespace-nowrap flex py-4 px-1 border-b-2 font-medium text-sm">
+                                  Carteras
+                                </a>
+                              </nav>
+                              <div class="tabs tabContent">
+                                    <div class="tab-item" id="tab1">
+                                    d
+                                    </div>
+                                    <div class="tab-item" id="tab2">
+                                    s
+                                    </div> 
+                                    <div class="tab-item" id="tab3">
+                                    a
+                                    </div> 
+                                    <div class="tab-item" id="tab4">
+                                        w   
+                                    </div>
+                                    <div class="tab-item" id="tab5">
+                                    q  
+                                    </div>
+                              </div>
+                        </div>
+                      </div>
+
+                </div>
+                <div class="container">
+                    <div class="flex flex-col">
+                        <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                          <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+                            <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+                              <table class="min-w-full divide-y divide-gray-200">
+                                <thead class="bg-gray-50">
+                                  <tr>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                      Name
+                                    </th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                      Title
+                                    </th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                      Status
+                                    </th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                      Role
+                                    </th>
+                                    <th scope="col" class="relative px-6 py-3">
+                                      <span class="sr-only">Edit</span>
+                                    </th>
+                                  </tr>
+                                </thead>
+                                <tbody class="bg-white divide-y divide-gray-200">
+                                  <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                      <div class="flex items-center">
+                                        <div class="flex-shrink-0 h-10 w-10">
+                                          <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60" alt="">
+                                        </div>
+                                        <div class="ml-4">
+                                          <div class="text-sm font-medium text-gray-900">
+                                            Jane Cooper
+                                          </div>
+                                          <div class="text-sm text-gray-500">
+                                            jane.cooper@example.com
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                      <div class="text-sm text-gray-900">Regional Paradigm Technician</div>
+                                      <div class="text-sm text-gray-500">Optimization</div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                      <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                                        Active
+                                      </span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                      Admin
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                      <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+                                    </td>
+                                  </tr>
+                      
+                                  <!-- More people... -->
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
         
                 <div class="container">
                     <div class="container-tabs">
@@ -632,1468 +775,6 @@ position: fixed !important;
 
                     </div>
 
-
-                    <div class="balances">
-                        <div class="balances__table small">
-                            <div class="balances__row balances__row_head">
-
-                                <div class="balances__cell">#</div>
-                                <div class="balances__cell">Moneda</div>
-                                <div class="balances__cell">Precio</div>
-                                <div class="balances__cell">1 h</div>
-                                <div class="balances__cell">24 h</div>
-                                <div class="balances__cell">7 d</div>
-                                <div class="balances__cell">Volumen en 24 h</div>
-                                <div class="balances__cell">Cap. de mercado</div>
-                                <div class="balances__cell">Últimos 7 días</div>
-                                <div class="balances__cell">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 18h4c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1zm1 6h10c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
-                                </div>
-                            </div>
-
-                            <div class="balances__row">
-<div class="balances__cell">
-    <div class="d-flex align-items-center"><span class="m-r-10" style="    margin-right: 10px;padding-top: 5px;">1</span> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-        <path d="M0 0h24v24H0V0z" fill="none"></path>
-        <path d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
-    </svg></div>
-    
-</div>
-<div class="balances__cell">
-    <div class="balances__company">
-        <div class="balances__logo"><img src="https://ui8-unity-exchange.herokuapp.com/img/logo/bitcoin.png"></div>
-        <div class="balances__text">ethereum</div>
-    </div>
-</div>
-<div class="balances__cell">BTC</div>
-<div class="balances__cell"><div class="d-flex danger-svg" style="color:#ff7675;fill:#ff7675">
-    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-        <path d="M0 0h24v24H0V0z" fill="none"></path>
-        <path d="M8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"></path></svg>3.6%</div
-        ></div>
-<div class="balances__cell">
-    <div class="balances__number">19,266.6454898</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">357,466,449,337</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-
-<div class="balances__cell d-flex align-items-center">
-    <div class="" id="">
-        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png">
-    </div>
-
-    
-</div>
-<div class="balances__cell ">
-    <div class="passive-hover">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-            <path d="M0 0h24v24H0V0z" fill="none"></path>
-            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-    </div>
-</div>
-
-</div><div class="balances__row">
-<div class="balances__cell">
-    <div class="d-flex align-items-center"><span class="m-r-10" style="    margin-right: 10px;padding-top: 5px;">2</span> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-        <path d="M0 0h24v24H0V0z" fill="none"></path>
-        <path d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
-    </svg></div>
-    
-</div>
-<div class="balances__cell">
-    <div class="balances__company">
-        <div class="balances__logo"><img src="https://ui8-unity-exchange.herokuapp.com/img/logo/bitcoin.png"></div>
-        <div class="balances__text">ethereum</div>
-    </div>
-</div>
-<div class="balances__cell">BTC</div>
-<div class="balances__cell"><div class="d-flex success-svg" style="color:#55efc4;"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M8.71 12.29L11.3 9.7c.39-.39 1.02-.39 1.41 0l2.59 2.59c.63.63.18 1.71-.71 1.71H9.41c-.89 0-1.33-1.08-.7-1.71z"></path></svg>4.2%</div></div>
-<div class="balances__cell">
-    <div class="balances__number">19,266.6454898</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">357,466,449,337</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-
-<div class="balances__cell d-flex align-items-center">
-    <div class="" id="">
-        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png">
-    </div>
-
-    
-</div>
-<div class="balances__cell ">
-    <div class="passive-hover">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-            <path d="M0 0h24v24H0V0z" fill="none"></path>
-            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-    </div>
-</div>
-
-</div><div class="balances__row">
-<div class="balances__cell">
-    <div class="d-flex align-items-center"><span class="m-r-10" style="    margin-right: 10px;padding-top: 5px;">3</span> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-        <path d="M0 0h24v24H0V0z" fill="none"></path>
-        <path d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
-    </svg></div>
-    
-</div>
-<div class="balances__cell">
-    <div class="balances__company">
-        <div class="balances__logo"><img src="https://ui8-unity-exchange.herokuapp.com/img/logo/bitcoin.png"></div>
-        <div class="balances__text">ethereum</div>
-    </div>
-</div>
-<div class="balances__cell">BTC</div>
-<div class="balances__cell"><div class="d-flex success-svg" style="color:#55efc4;"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M8.71 12.29L11.3 9.7c.39-.39 1.02-.39 1.41 0l2.59 2.59c.63.63.18 1.71-.71 1.71H9.41c-.89 0-1.33-1.08-.7-1.71z"></path></svg>4.9%</div></div>
-<div class="balances__cell">
-    <div class="balances__number">19,266.6454898</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">357,466,449,337</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-
-<div class="balances__cell d-flex align-items-center">
-    <div class="" id="">
-        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png">
-    </div>
-
-    
-</div>
-<div class="balances__cell ">
-    <div class="passive-hover">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-            <path d="M0 0h24v24H0V0z" fill="none"></path>
-            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-    </div>
-</div>
-
-</div><div class="balances__row">
-<div class="balances__cell">
-    <div class="d-flex align-items-center"><span class="m-r-10" style="    margin-right: 10px;padding-top: 5px;">4</span> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-        <path d="M0 0h24v24H0V0z" fill="none"></path>
-        <path d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
-    </svg></div>
-    
-</div>
-<div class="balances__cell">
-    <div class="balances__company">
-        <div class="balances__logo"><img src="https://ui8-unity-exchange.herokuapp.com/img/logo/bitcoin.png"></div>
-        <div class="balances__text">ethereum</div>
-    </div>
-</div>
-<div class="balances__cell">BTC</div>
-<div class="balances__cell"><div class="d-flex danger-svg" style="color:#ff7675;fill:#ff7675"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"></path></svg>0.2%</div></div>
-<div class="balances__cell">
-    <div class="balances__number">19,266.6454898</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">357,466,449,337</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-
-<div class="balances__cell d-flex align-items-center">
-    <div class="" id="">
-        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png">
-    </div>
-
-    
-</div>
-<div class="balances__cell ">
-    <div class="passive-hover">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-            <path d="M0 0h24v24H0V0z" fill="none"></path>
-            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-    </div>
-</div>
-
-</div><div class="balances__row">
-<div class="balances__cell">
-    <div class="d-flex align-items-center"><span class="m-r-10" style="    margin-right: 10px;padding-top: 5px;">5</span> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-        <path d="M0 0h24v24H0V0z" fill="none"></path>
-        <path d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
-    </svg></div>
-    
-</div>
-<div class="balances__cell">
-    <div class="balances__company">
-        <div class="balances__logo"><img src="https://ui8-unity-exchange.herokuapp.com/img/logo/bitcoin.png"></div>
-        <div class="balances__text">ethereum</div>
-    </div>
-</div>
-<div class="balances__cell">BTC</div>
-<div class="balances__cell"><div class="d-flex danger-svg" style="color:#ff7675;fill:#ff7675"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"></path></svg>1.6%</div></div>
-<div class="balances__cell">
-    <div class="balances__number">19,266.6454898</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">357,466,449,337</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-
-<div class="balances__cell d-flex align-items-center">
-    <div class="" id="">
-        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png">
-    </div>
-
-    
-</div>
-<div class="balances__cell ">
-    <div class="passive-hover">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-            <path d="M0 0h24v24H0V0z" fill="none"></path>
-            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-    </div>
-</div>
-
-</div><div class="balances__row">
-<div class="balances__cell">
-    <div class="d-flex align-items-center"><span class="m-r-10" style="    margin-right: 10px;padding-top: 5px;">6</span> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-        <path d="M0 0h24v24H0V0z" fill="none"></path>
-        <path d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
-    </svg></div>
-    
-</div>
-<div class="balances__cell">
-    <div class="balances__company">
-        <div class="balances__logo"><img src="https://ui8-unity-exchange.herokuapp.com/img/logo/bitcoin.png"></div>
-        <div class="balances__text">ethereum</div>
-    </div>
-</div>
-<div class="balances__cell">BTC</div>
-<div class="balances__cell"><div class="d-flex danger-svg" style="color:#ff7675;fill:#ff7675"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"></path></svg>4.2%</div></div>
-<div class="balances__cell">
-    <div class="balances__number">19,266.6454898</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">357,466,449,337</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-
-<div class="balances__cell d-flex align-items-center">
-    <div class="" id="">
-        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png">
-    </div>
-
-    
-</div>
-<div class="balances__cell ">
-    <div class="passive-hover">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-            <path d="M0 0h24v24H0V0z" fill="none"></path>
-            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-    </div>
-</div>
-
-</div><div class="balances__row">
-<div class="balances__cell">
-    <div class="d-flex align-items-center"><span class="m-r-10" style="    margin-right: 10px;padding-top: 5px;">7</span> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-        <path d="M0 0h24v24H0V0z" fill="none"></path>
-        <path d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
-    </svg></div>
-    
-</div>
-<div class="balances__cell">
-    <div class="balances__company">
-        <div class="balances__logo"><img src="https://ui8-unity-exchange.herokuapp.com/img/logo/bitcoin.png"></div>
-        <div class="balances__text">ethereum</div>
-    </div>
-</div>
-<div class="balances__cell">BTC</div>
-<div class="balances__cell"><div class="d-flex success-svg" style="color:#55efc4;"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M8.71 12.29L11.3 9.7c.39-.39 1.02-.39 1.41 0l2.59 2.59c.63.63.18 1.71-.71 1.71H9.41c-.89 0-1.33-1.08-.7-1.71z"></path></svg>0.4%</div></div>
-<div class="balances__cell">
-    <div class="balances__number">19,266.6454898</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">357,466,449,337</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-
-<div class="balances__cell d-flex align-items-center">
-    <div class="" id="">
-        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png">
-    </div>
-
-    
-</div>
-<div class="balances__cell ">
-    <div class="passive-hover">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-            <path d="M0 0h24v24H0V0z" fill="none"></path>
-            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-    </div>
-</div>
-
-</div><div class="balances__row">
-<div class="balances__cell">
-    <div class="d-flex align-items-center"><span class="m-r-10" style="    margin-right: 10px;padding-top: 5px;">8</span> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-        <path d="M0 0h24v24H0V0z" fill="none"></path>
-        <path d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
-    </svg></div>
-    
-</div>
-<div class="balances__cell">
-    <div class="balances__company">
-        <div class="balances__logo"><img src="https://ui8-unity-exchange.herokuapp.com/img/logo/bitcoin.png"></div>
-        <div class="balances__text">ethereum</div>
-    </div>
-</div>
-<div class="balances__cell">BTC</div>
-<div class="balances__cell"><div class="d-flex danger-svg" style="color:#ff7675;fill:#ff7675"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"></path></svg>2.2%</div></div>
-<div class="balances__cell">
-    <div class="balances__number">19,266.6454898</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">357,466,449,337</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-
-<div class="balances__cell d-flex align-items-center">
-    <div class="" id="">
-        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png">
-    </div>
-
-    
-</div>
-<div class="balances__cell ">
-    <div class="passive-hover">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-            <path d="M0 0h24v24H0V0z" fill="none"></path>
-            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-    </div>
-</div>
-
-</div><div class="balances__row">
-<div class="balances__cell">
-    <div class="d-flex align-items-center"><span class="m-r-10" style="    margin-right: 10px;padding-top: 5px;">9</span> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-        <path d="M0 0h24v24H0V0z" fill="none"></path>
-        <path d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
-    </svg></div>
-    
-</div>
-<div class="balances__cell">
-    <div class="balances__company">
-        <div class="balances__logo"><img src="https://ui8-unity-exchange.herokuapp.com/img/logo/bitcoin.png"></div>
-        <div class="balances__text">ethereum</div>
-    </div>
-</div>
-<div class="balances__cell">BTC</div>
-<div class="balances__cell"><div class="d-flex success-svg" style="color:#55efc4;"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M8.71 12.29L11.3 9.7c.39-.39 1.02-.39 1.41 0l2.59 2.59c.63.63.18 1.71-.71 1.71H9.41c-.89 0-1.33-1.08-.7-1.71z"></path></svg>2.5%</div></div>
-<div class="balances__cell">
-    <div class="balances__number">19,266.6454898</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">357,466,449,337</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-
-<div class="balances__cell d-flex align-items-center">
-    <div class="" id="">
-        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png">
-    </div>
-
-    
-</div>
-<div class="balances__cell ">
-    <div class="passive-hover">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-            <path d="M0 0h24v24H0V0z" fill="none"></path>
-            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-    </div>
-</div>
-
-</div><div class="balances__row">
-<div class="balances__cell">
-    <div class="d-flex align-items-center"><span class="m-r-10" style="    margin-right: 10px;padding-top: 5px;">10</span> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-        <path d="M0 0h24v24H0V0z" fill="none"></path>
-        <path d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
-    </svg></div>
-    
-</div>
-<div class="balances__cell">
-    <div class="balances__company">
-        <div class="balances__logo"><img src="https://ui8-unity-exchange.herokuapp.com/img/logo/bitcoin.png"></div>
-        <div class="balances__text">ethereum</div>
-    </div>
-</div>
-<div class="balances__cell">BTC</div>
-<div class="balances__cell"><div class="d-flex danger-svg" style="color:#ff7675;fill:#ff7675"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"></path></svg>2.5%</div></div>
-<div class="balances__cell">
-    <div class="balances__number">19,266.6454898</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">357,466,449,337</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-
-<div class="balances__cell d-flex align-items-center">
-    <div class="" id="">
-        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png">
-    </div>
-
-    
-</div>
-<div class="balances__cell ">
-    <div class="passive-hover">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-            <path d="M0 0h24v24H0V0z" fill="none"></path>
-            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-    </div>
-</div>
-
-</div><div class="balances__row">
-<div class="balances__cell">
-    <div class="d-flex align-items-center"><span class="m-r-10" style="    margin-right: 10px;padding-top: 5px;">11</span> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-        <path d="M0 0h24v24H0V0z" fill="none"></path>
-        <path d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
-    </svg></div>
-    
-</div>
-<div class="balances__cell">
-    <div class="balances__company">
-        <div class="balances__logo"><img src="https://ui8-unity-exchange.herokuapp.com/img/logo/bitcoin.png"></div>
-        <div class="balances__text">ethereum</div>
-    </div>
-</div>
-<div class="balances__cell">BTC</div>
-<div class="balances__cell"><div class="d-flex danger-svg" style="color:#ff7675;fill:#ff7675"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"></path></svg>3.3%</div></div>
-<div class="balances__cell">
-    <div class="balances__number">19,266.6454898</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">357,466,449,337</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-
-<div class="balances__cell d-flex align-items-center">
-    <div class="" id="">
-        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png">
-    </div>
-
-    
-</div>
-<div class="balances__cell ">
-    <div class="passive-hover">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-            <path d="M0 0h24v24H0V0z" fill="none"></path>
-            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-    </div>
-</div>
-
-</div><div class="balances__row">
-<div class="balances__cell">
-    <div class="d-flex align-items-center"><span class="m-r-10" style="    margin-right: 10px;padding-top: 5px;">12</span> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-        <path d="M0 0h24v24H0V0z" fill="none"></path>
-        <path d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
-    </svg></div>
-    
-</div>
-<div class="balances__cell">
-    <div class="balances__company">
-        <div class="balances__logo"><img src="https://ui8-unity-exchange.herokuapp.com/img/logo/bitcoin.png"></div>
-        <div class="balances__text">ethereum</div>
-    </div>
-</div>
-<div class="balances__cell">BTC</div>
-<div class="balances__cell"><div class="d-flex success-svg" style="color:#55efc4;"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M8.71 12.29L11.3 9.7c.39-.39 1.02-.39 1.41 0l2.59 2.59c.63.63.18 1.71-.71 1.71H9.41c-.89 0-1.33-1.08-.7-1.71z"></path></svg>0.3%</div></div>
-<div class="balances__cell">
-    <div class="balances__number">19,266.6454898</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">357,466,449,337</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-
-<div class="balances__cell d-flex align-items-center">
-    <div class="" id="">
-        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png">
-    </div>
-
-    
-</div>
-<div class="balances__cell ">
-    <div class="passive-hover">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-            <path d="M0 0h24v24H0V0z" fill="none"></path>
-            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-    </div>
-</div>
-
-</div><div class="balances__row">
-<div class="balances__cell">
-    <div class="d-flex align-items-center"><span class="m-r-10" style="    margin-right: 10px;padding-top: 5px;">13</span> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-        <path d="M0 0h24v24H0V0z" fill="none"></path>
-        <path d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
-    </svg></div>
-    
-</div>
-<div class="balances__cell">
-    <div class="balances__company">
-        <div class="balances__logo"><img src="https://ui8-unity-exchange.herokuapp.com/img/logo/bitcoin.png"></div>
-        <div class="balances__text">ethereum</div>
-    </div>
-</div>
-<div class="balances__cell">BTC</div>
-<div class="balances__cell"><div class="d-flex danger-svg" style="color:#ff7675;fill:#ff7675"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"></path></svg>1.3%</div></div>
-<div class="balances__cell">
-    <div class="balances__number">19,266.6454898</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">357,466,449,337</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-
-<div class="balances__cell d-flex align-items-center">
-    <div class="" id="">
-        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png">
-    </div>
-
-    
-</div>
-<div class="balances__cell ">
-    <div class="passive-hover">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-            <path d="M0 0h24v24H0V0z" fill="none"></path>
-            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-    </div>
-</div>
-
-</div><div class="balances__row">
-<div class="balances__cell">
-    <div class="d-flex align-items-center"><span class="m-r-10" style="    margin-right: 10px;padding-top: 5px;">14</span> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-        <path d="M0 0h24v24H0V0z" fill="none"></path>
-        <path d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
-    </svg></div>
-    
-</div>
-<div class="balances__cell">
-    <div class="balances__company">
-        <div class="balances__logo"><img src="https://ui8-unity-exchange.herokuapp.com/img/logo/bitcoin.png"></div>
-        <div class="balances__text">ethereum</div>
-    </div>
-</div>
-<div class="balances__cell">BTC</div>
-<div class="balances__cell"><div class="d-flex danger-svg" style="color:#ff7675;fill:#ff7675"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"></path></svg>0.1%</div></div>
-<div class="balances__cell">
-    <div class="balances__number">19,266.6454898</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">357,466,449,337</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-
-<div class="balances__cell d-flex align-items-center">
-    <div class="" id="">
-        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png">
-    </div>
-
-    
-</div>
-<div class="balances__cell ">
-    <div class="passive-hover">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-            <path d="M0 0h24v24H0V0z" fill="none"></path>
-            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-    </div>
-</div>
-
-</div><div class="balances__row">
-<div class="balances__cell">
-    <div class="d-flex align-items-center"><span class="m-r-10" style="    margin-right: 10px;padding-top: 5px;">15</span> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-        <path d="M0 0h24v24H0V0z" fill="none"></path>
-        <path d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
-    </svg></div>
-    
-</div>
-<div class="balances__cell">
-    <div class="balances__company">
-        <div class="balances__logo"><img src="https://ui8-unity-exchange.herokuapp.com/img/logo/bitcoin.png"></div>
-        <div class="balances__text">ethereum</div>
-    </div>
-</div>
-<div class="balances__cell">BTC</div>
-<div class="balances__cell"><div class="d-flex danger-svg" style="color:#ff7675;fill:#ff7675"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"></path></svg>1%</div></div>
-<div class="balances__cell">
-    <div class="balances__number">19,266.6454898</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">357,466,449,337</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-
-<div class="balances__cell d-flex align-items-center">
-    <div class="" id="">
-        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png">
-    </div>
-
-    
-</div>
-<div class="balances__cell ">
-    <div class="passive-hover">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-            <path d="M0 0h24v24H0V0z" fill="none"></path>
-            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-    </div>
-</div>
-
-</div><div class="balances__row">
-<div class="balances__cell">
-    <div class="d-flex align-items-center"><span class="m-r-10" style="    margin-right: 10px;padding-top: 5px;">16</span> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-        <path d="M0 0h24v24H0V0z" fill="none"></path>
-        <path d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
-    </svg></div>
-    
-</div>
-<div class="balances__cell">
-    <div class="balances__company">
-        <div class="balances__logo"><img src="https://ui8-unity-exchange.herokuapp.com/img/logo/bitcoin.png"></div>
-        <div class="balances__text">ethereum</div>
-    </div>
-</div>
-<div class="balances__cell">BTC</div>
-<div class="balances__cell"><div class="d-flex danger-svg" style="color:#ff7675;fill:#ff7675"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"></path></svg>0.2%</div></div>
-<div class="balances__cell">
-    <div class="balances__number">19,266.6454898</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">357,466,449,337</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-
-<div class="balances__cell d-flex align-items-center">
-    <div class="" id="">
-        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png">
-    </div>
-
-    
-</div>
-<div class="balances__cell ">
-    <div class="passive-hover">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-            <path d="M0 0h24v24H0V0z" fill="none"></path>
-            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-    </div>
-</div>
-
-</div><div class="balances__row">
-<div class="balances__cell">
-    <div class="d-flex align-items-center"><span class="m-r-10" style="    margin-right: 10px;padding-top: 5px;">17</span> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-        <path d="M0 0h24v24H0V0z" fill="none"></path>
-        <path d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
-    </svg></div>
-    
-</div>
-<div class="balances__cell">
-    <div class="balances__company">
-        <div class="balances__logo"><img src="https://ui8-unity-exchange.herokuapp.com/img/logo/bitcoin.png"></div>
-        <div class="balances__text">ethereum</div>
-    </div>
-</div>
-<div class="balances__cell">BTC</div>
-<div class="balances__cell"><div class="d-flex danger-svg" style="color:#ff7675;fill:#ff7675"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"></path></svg>1.7%</div></div>
-<div class="balances__cell">
-    <div class="balances__number">19,266.6454898</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">357,466,449,337</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-
-<div class="balances__cell d-flex align-items-center">
-    <div class="" id="">
-        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png">
-    </div>
-
-    
-</div>
-<div class="balances__cell ">
-    <div class="passive-hover">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-            <path d="M0 0h24v24H0V0z" fill="none"></path>
-            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-    </div>
-</div>
-
-</div><div class="balances__row">
-<div class="balances__cell">
-    <div class="d-flex align-items-center"><span class="m-r-10" style="    margin-right: 10px;padding-top: 5px;">18</span> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-        <path d="M0 0h24v24H0V0z" fill="none"></path>
-        <path d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
-    </svg></div>
-    
-</div>
-<div class="balances__cell">
-    <div class="balances__company">
-        <div class="balances__logo"><img src="https://ui8-unity-exchange.herokuapp.com/img/logo/bitcoin.png"></div>
-        <div class="balances__text">ethereum</div>
-    </div>
-</div>
-<div class="balances__cell">BTC</div>
-<div class="balances__cell"><div class="d-flex danger-svg" style="color:#ff7675;fill:#ff7675"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"></path></svg>0.2%</div></div>
-<div class="balances__cell">
-    <div class="balances__number">19,266.6454898</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">357,466,449,337</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-
-<div class="balances__cell d-flex align-items-center">
-    <div class="" id="">
-        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png">
-    </div>
-
-    
-</div>
-<div class="balances__cell ">
-    <div class="passive-hover">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-            <path d="M0 0h24v24H0V0z" fill="none"></path>
-            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-    </div>
-</div>
-
-</div><div class="balances__row">
-<div class="balances__cell">
-    <div class="d-flex align-items-center"><span class="m-r-10" style="    margin-right: 10px;padding-top: 5px;">19</span> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-        <path d="M0 0h24v24H0V0z" fill="none"></path>
-        <path d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
-    </svg></div>
-    
-</div>
-<div class="balances__cell">
-    <div class="balances__company">
-        <div class="balances__logo"><img src="https://ui8-unity-exchange.herokuapp.com/img/logo/bitcoin.png"></div>
-        <div class="balances__text">ethereum</div>
-    </div>
-</div>
-<div class="balances__cell">BTC</div>
-<div class="balances__cell"><div class="d-flex success-svg" style="color:#55efc4;"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M8.71 12.29L11.3 9.7c.39-.39 1.02-.39 1.41 0l2.59 2.59c.63.63.18 1.71-.71 1.71H9.41c-.89 0-1.33-1.08-.7-1.71z"></path></svg>5%</div></div>
-<div class="balances__cell">
-    <div class="balances__number">19,266.6454898</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">357,466,449,337</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-
-<div class="balances__cell d-flex align-items-center">
-    <div class="" id="">
-        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png">
-    </div>
-
-    
-</div>
-<div class="balances__cell ">
-    <div class="passive-hover">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-            <path d="M0 0h24v24H0V0z" fill="none"></path>
-            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-    </div>
-</div>
-
-</div><div class="balances__row">
-<div class="balances__cell">
-    <div class="d-flex align-items-center"><span class="m-r-10" style="    margin-right: 10px;padding-top: 5px;">20</span> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-        <path d="M0 0h24v24H0V0z" fill="none"></path>
-        <path d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
-    </svg></div>
-    
-</div>
-<div class="balances__cell">
-    <div class="balances__company">
-        <div class="balances__logo"><img src="https://ui8-unity-exchange.herokuapp.com/img/logo/bitcoin.png"></div>
-        <div class="balances__text">ethereum</div>
-    </div>
-</div>
-<div class="balances__cell">BTC</div>
-<div class="balances__cell"><div class="d-flex danger-svg" style="color:#ff7675;fill:#ff7675"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"></path></svg>0.2%</div></div>
-<div class="balances__cell">
-    <div class="balances__number">19,266.6454898</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">357,466,449,337</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-
-<div class="balances__cell d-flex align-items-center">
-    <div class="" id="">
-        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png">
-    </div>
-
-    
-</div>
-<div class="balances__cell ">
-    <div class="passive-hover">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-            <path d="M0 0h24v24H0V0z" fill="none"></path>
-            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-    </div>
-</div>
-
-</div><div class="balances__row">
-<div class="balances__cell">
-    <div class="d-flex align-items-center"><span class="m-r-10" style="    margin-right: 10px;padding-top: 5px;">21</span> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-        <path d="M0 0h24v24H0V0z" fill="none"></path>
-        <path d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
-    </svg></div>
-    
-</div>
-<div class="balances__cell">
-    <div class="balances__company">
-        <div class="balances__logo"><img src="https://ui8-unity-exchange.herokuapp.com/img/logo/bitcoin.png"></div>
-        <div class="balances__text">ethereum</div>
-    </div>
-</div>
-<div class="balances__cell">BTC</div>
-<div class="balances__cell"><div class="d-flex danger-svg" style="color:#ff7675;fill:#ff7675"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"></path></svg>2.7%</div></div>
-<div class="balances__cell">
-    <div class="balances__number">19,266.6454898</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">357,466,449,337</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-
-<div class="balances__cell d-flex align-items-center">
-    <div class="" id="">
-        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png">
-    </div>
-
-    
-</div>
-<div class="balances__cell ">
-    <div class="passive-hover">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-            <path d="M0 0h24v24H0V0z" fill="none"></path>
-            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-    </div>
-</div>
-
-</div><div class="balances__row">
-<div class="balances__cell">
-    <div class="d-flex align-items-center"><span class="m-r-10" style="    margin-right: 10px;padding-top: 5px;">22</span> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-        <path d="M0 0h24v24H0V0z" fill="none"></path>
-        <path d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
-    </svg></div>
-    
-</div>
-<div class="balances__cell">
-    <div class="balances__company">
-        <div class="balances__logo"><img src="https://ui8-unity-exchange.herokuapp.com/img/logo/bitcoin.png"></div>
-        <div class="balances__text">ethereum</div>
-    </div>
-</div>
-<div class="balances__cell">BTC</div>
-<div class="balances__cell"><div class="d-flex danger-svg" style="color:#ff7675;fill:#ff7675"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"></path></svg>1.3%</div></div>
-<div class="balances__cell">
-    <div class="balances__number">19,266.6454898</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">357,466,449,337</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-
-<div class="balances__cell d-flex align-items-center">
-    <div class="" id="">
-        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png">
-    </div>
-
-    
-</div>
-<div class="balances__cell ">
-    <div class="passive-hover">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-            <path d="M0 0h24v24H0V0z" fill="none"></path>
-            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-    </div>
-</div>
-
-</div><div class="balances__row">
-<div class="balances__cell">
-    <div class="d-flex align-items-center"><span class="m-r-10" style="    margin-right: 10px;padding-top: 5px;">23</span> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-        <path d="M0 0h24v24H0V0z" fill="none"></path>
-        <path d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
-    </svg></div>
-    
-</div>
-<div class="balances__cell">
-    <div class="balances__company">
-        <div class="balances__logo"><img src="https://ui8-unity-exchange.herokuapp.com/img/logo/bitcoin.png"></div>
-        <div class="balances__text">ethereum</div>
-    </div>
-</div>
-<div class="balances__cell">BTC</div>
-<div class="balances__cell"><div class="d-flex danger-svg" style="color:#ff7675;fill:#ff7675"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"></path></svg>4.1%</div></div>
-<div class="balances__cell">
-    <div class="balances__number">19,266.6454898</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">357,466,449,337</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-
-<div class="balances__cell d-flex align-items-center">
-    <div class="" id="">
-        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png">
-    </div>
-
-    
-</div>
-<div class="balances__cell ">
-    <div class="passive-hover">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-            <path d="M0 0h24v24H0V0z" fill="none"></path>
-            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-    </div>
-</div>
-
-</div><div class="balances__row">
-<div class="balances__cell">
-    <div class="d-flex align-items-center"><span class="m-r-10" style="    margin-right: 10px;padding-top: 5px;">24</span> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-        <path d="M0 0h24v24H0V0z" fill="none"></path>
-        <path d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
-    </svg></div>
-    
-</div>
-<div class="balances__cell">
-    <div class="balances__company">
-        <div class="balances__logo"><img src="https://ui8-unity-exchange.herokuapp.com/img/logo/bitcoin.png"></div>
-        <div class="balances__text">ethereum</div>
-    </div>
-</div>
-<div class="balances__cell">BTC</div>
-<div class="balances__cell"><div class="d-flex danger-svg" style="color:#ff7675;fill:#ff7675"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"></path></svg>0.4%</div></div>
-<div class="balances__cell">
-    <div class="balances__number">19,266.6454898</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">357,466,449,337</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-
-<div class="balances__cell d-flex align-items-center">
-    <div class="" id="">
-        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png">
-    </div>
-
-    
-</div>
-<div class="balances__cell ">
-    <div class="passive-hover">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-            <path d="M0 0h24v24H0V0z" fill="none"></path>
-            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-    </div>
-</div>
-
-</div><div class="balances__row">
-<div class="balances__cell">
-    <div class="d-flex align-items-center"><span class="m-r-10" style="    margin-right: 10px;padding-top: 5px;">25</span> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-        <path d="M0 0h24v24H0V0z" fill="none"></path>
-        <path d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
-    </svg></div>
-    
-</div>
-<div class="balances__cell">
-    <div class="balances__company">
-        <div class="balances__logo"><img src="https://ui8-unity-exchange.herokuapp.com/img/logo/bitcoin.png"></div>
-        <div class="balances__text">ethereum</div>
-    </div>
-</div>
-<div class="balances__cell">BTC</div>
-<div class="balances__cell"><div class="d-flex danger-svg" style="color:#ff7675;fill:#ff7675"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"></path></svg>3.5%</div></div>
-<div class="balances__cell">
-    <div class="balances__number">19,266.6454898</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">357,466,449,337</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-
-<div class="balances__cell d-flex align-items-center">
-    <div class="" id="">
-        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png">
-    </div>
-
-    
-</div>
-<div class="balances__cell ">
-    <div class="passive-hover">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-            <path d="M0 0h24v24H0V0z" fill="none"></path>
-            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-    </div>
-</div>
-
-</div><div class="balances__row">
-<div class="balances__cell">
-    <div class="d-flex align-items-center"><span class="m-r-10" style="    margin-right: 10px;padding-top: 5px;">26</span> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-        <path d="M0 0h24v24H0V0z" fill="none"></path>
-        <path d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
-    </svg></div>
-    
-</div>
-<div class="balances__cell">
-    <div class="balances__company">
-        <div class="balances__logo"><img src="https://ui8-unity-exchange.herokuapp.com/img/logo/bitcoin.png"></div>
-        <div class="balances__text">ethereum</div>
-    </div>
-</div>
-<div class="balances__cell">BTC</div>
-<div class="balances__cell"><div class="d-flex success-svg" style="color:#55efc4;"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M8.71 12.29L11.3 9.7c.39-.39 1.02-.39 1.41 0l2.59 2.59c.63.63.18 1.71-.71 1.71H9.41c-.89 0-1.33-1.08-.7-1.71z"></path></svg>2.8%</div></div>
-<div class="balances__cell">
-    <div class="balances__number">19,266.6454898</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">357,466,449,337</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-
-<div class="balances__cell d-flex align-items-center">
-    <div class="" id="">
-        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png">
-    </div>
-
-    
-</div>
-<div class="balances__cell ">
-    <div class="passive-hover">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-            <path d="M0 0h24v24H0V0z" fill="none"></path>
-            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-    </div>
-</div>
-
-</div><div class="balances__row">
-<div class="balances__cell">
-    <div class="d-flex align-items-center"><span class="m-r-10" style="    margin-right: 10px;padding-top: 5px;">27</span> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-        <path d="M0 0h24v24H0V0z" fill="none"></path>
-        <path d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
-    </svg></div>
-    
-</div>
-<div class="balances__cell">
-    <div class="balances__company">
-        <div class="balances__logo"><img src="https://ui8-unity-exchange.herokuapp.com/img/logo/bitcoin.png"></div>
-        <div class="balances__text">ethereum</div>
-    </div>
-</div>
-<div class="balances__cell">BTC</div>
-<div class="balances__cell"><div class="d-flex danger-svg" style="color:#ff7675;fill:#ff7675"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"></path></svg>1.1%</div></div>
-<div class="balances__cell">
-    <div class="balances__number">19,266.6454898</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">357,466,449,337</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-
-<div class="balances__cell d-flex align-items-center">
-    <div class="" id="">
-        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png">
-    </div>
-
-    
-</div>
-<div class="balances__cell ">
-    <div class="passive-hover">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-            <path d="M0 0h24v24H0V0z" fill="none"></path>
-            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-    </div>
-</div>
-
-</div><div class="balances__row">
-<div class="balances__cell">
-    <div class="d-flex align-items-center"><span class="m-r-10" style="    margin-right: 10px;padding-top: 5px;">28</span> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-        <path d="M0 0h24v24H0V0z" fill="none"></path>
-        <path d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
-    </svg></div>
-    
-</div>
-<div class="balances__cell">
-    <div class="balances__company">
-        <div class="balances__logo"><img src="https://ui8-unity-exchange.herokuapp.com/img/logo/bitcoin.png"></div>
-        <div class="balances__text">ethereum</div>
-    </div>
-</div>
-<div class="balances__cell">BTC</div>
-<div class="balances__cell"><div class="d-flex danger-svg" style="color:#ff7675;fill:#ff7675"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"></path></svg>1.3%</div></div>
-<div class="balances__cell">
-    <div class="balances__number">19,266.6454898</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">357,466,449,337</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-
-<div class="balances__cell d-flex align-items-center">
-    <div class="" id="">
-        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png">
-    </div>
-
-    
-</div>
-<div class="balances__cell ">
-    <div class="passive-hover">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-            <path d="M0 0h24v24H0V0z" fill="none"></path>
-            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-    </div>
-</div>
-
-</div><div class="balances__row">
-<div class="balances__cell">
-    <div class="d-flex align-items-center"><span class="m-r-10" style="    margin-right: 10px;padding-top: 5px;">29</span> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-        <path d="M0 0h24v24H0V0z" fill="none"></path>
-        <path d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
-    </svg></div>
-    
-</div>
-<div class="balances__cell">
-    <div class="balances__company">
-        <div class="balances__logo"><img src="https://ui8-unity-exchange.herokuapp.com/img/logo/bitcoin.png"></div>
-        <div class="balances__text">ethereum</div>
-    </div>
-</div>
-<div class="balances__cell">BTC</div>
-<div class="balances__cell"><div class="d-flex danger-svg" style="color:#ff7675;fill:#ff7675"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"></path></svg>3.6%</div></div>
-<div class="balances__cell">
-    <div class="balances__number">19,266.6454898</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">357,466,449,337</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-<div class="balances__cell">
-    <div class="balances__number">$49,046,886,271</div>
-    <div class="balances__price">$2,134.325</div>
-</div>
-
-<div class="balances__cell d-flex align-items-center">
-    <div class="" id="">
-        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png">
-    </div>
-
-    
-</div>
-<div class="balances__cell ">
-    <div class="passive-hover">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-            <path d="M0 0h24v24H0V0z" fill="none"></path>
-            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-    </div>
-</div>
-
-</div>
-
-                           
-
-
-
-                            
-                           
-
-                           
-
-                            </div>
-
-
-
-                        </div>
-                    </div>
-
                     <br>
                     <br>
                 </div>
@@ -2125,6 +806,7 @@ position: fixed !important;
     </script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="js.js"></script>
     <script>
         tippy('.hov', {
             arrow: true,
@@ -2210,25 +892,9 @@ position: fixed !important;
             item[i].style.setProperty("transition-delay",  i * .29 + "s");
         }
 
-        (function() {
-            // Add event listener
-            document.addEventListener("mousemove", parallax);
-            const elem = document.querySelector(".parallax");
-            // Magic happens here
-            function parallax(e) {
-                let _w = window.innerWidth/2;
-                let _h = window.innerHeight/2;
-                let _mouseX = e.clientX;
-                let _mouseY = e.clientY;
-                let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
-                let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
-                let _depth3 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.06}%`;
-                let x = `${_depth3}, ${_depth2}, ${_depth1}`;
-               
-                elem.style.backgroundPosition = x;
-            }
 
-        })();
+        
+
     </script>
 </body>
 </html>
